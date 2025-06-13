@@ -30,3 +30,89 @@
   margin-inline-start: 0px !important; 
   margin-inline-end: 0px !important;
 }
+
+/* src/components/TabsWithFlexCalcWidth.css */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card .ant-card-body {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  font-family: 'Noto Serif KR';
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.card-hover-img {
+  object-fit: cover;
+  height: 353px;
+  width: 100%;
+  border-radius: 18px;
+  transition: transform 0.3s ease;
+}
+
+.card-hover-img:hover {
+  transform: scale(1.05);
+  border-radius: 18px;
+}
+
+.project-meta {
+  margin-bottom: 8px;
+  margin-top: 1rem;
+  font-family: 'Noto Serif KR';
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cont_txt {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.4;
+  max-height: 72px;
+  min-height: 72px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.cont_txt2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tags {
+  color: rgba(93, 93, 93, 0.85);
+  font-size: 15px;
+  font-family: 'Noto Serif KR';
+}
+
+.contribution {
+  color: rgba(93, 93, 93, 0.85);
+  font-size: 15px;
+  font-family: 'Noto Serif KR';
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
