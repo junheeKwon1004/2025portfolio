@@ -1,0 +1,643 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fdfbf5;
+  font-family: 'Noto Serif KR', serif;
+}
+.body_wrap{
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid #191919;
+}
+
+/* font */
+@font-face {
+  font-family: 'Bohemian Soul';
+  src: url('./assets/fonts/Bohemian Soul.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fraternite';
+  src: url('./assets/fonts/Fraternite.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* common */
+.font_Fraternite{
+  font-family: 'Fraternite';
+}
+
+
+
+/* header */
+.header{
+  margin-top: -1rem;
+}
+.header_Wrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  border-bottom: 1px solid #191919;
+  padding-bottom: 0.5rem;
+}
+.header_Wrap h5{
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.header_Wrap .clock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.header_Wrap .clock .round{
+  width: 10px;
+  height: 10px;
+  background: #f73c2d;
+  border-radius: 100%;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.header_Wrap .clock p{
+  font-size: 1.25rem;
+}
+
+/* main */
+.main{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3.75rem 0;
+  border-bottom: 1px solid #191919;
+  overflow: hidden;
+}
+.main .leftSection{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 670px;
+  height: 650px;
+}
+.main .leftSection h2{
+  font-family: 'Bohemian Soul';
+  font-size: 3.875rem;
+  font-weight: 200;
+  margin: 0;
+}
+.main .leftSection .txtBox{
+  width: 657px;
+  margin-top: 3rem;
+}
+.main .leftSection .txtBox h4{
+  font-family: 'Fraternite';
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin: 0;
+}
+.main .leftSection .txtBox p{
+  font-size: 1.125rem;
+  text-align: justify;
+  margin: 0;
+  margin-top: 1.5rem;
+  line-height: 1.85rem;
+}
+.main .leftSection .imgBox{
+  width: 100%;
+  margin-top: 7rem;
+}
+.main .rightSection{
+  width: 903px;
+}
+.main .rightSection .photo{
+  width: 100%;
+  height: 645px;
+  background: #ddd;
+  border-radius: 18px;
+}
+.main .rightSection .photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* section01 */
+.section01{
+  width: 100%;
+  height: 120px;
+  padding: 2rem 0;
+  border-bottom: 1px solid #191919;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section01 .sectionLeft{
+  width: 180px;
+  position: relative;
+}
+.section01 .sectionLeft::after{
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: 0px;
+  width: 1px;
+  height: 80px;
+  background: #191919;
+}
+.section01 .sectionLeft .font_Fraternite{
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin: 0px;
+}
+.section01 .sectionRight{
+  width: calc((100% - 180px));
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.section01 .sectionRight .box{
+  width: calc((100% - 2rem) / 7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section01 .sectionRight .box p{
+  width: 100%;
+  margin: 1rem 0 0 0;
+  text-align: center;
+  font-family: 'Fraternite';
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+/* section02 */
+.section02{
+  width: 100%;
+  padding: 2rem 0;
+}
+.section02 .title{
+  width: 100%;
+  border-bottom: 1px solid #191919;
+  padding: 2rem 0 4rem 0;
+}
+.section02 .title h2{
+  font-family: 'Bohemian Soul';
+  font-weight: 200;
+  font-size: 3.375rem;
+  margin: 0;
+}
+.section02 .project_Tab{
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem; */
+}
+
+/* MyTabs */
+.section02 .project_Tab{
+  margin-top: 4rem
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab{
+  padding: 1rem;
+  background: #191919;
+  color: #fff;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px;
+  letter-spacing: 0.03rem;
+  width: fit-content;
+  height: 39px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color: #fff;
+  text-shadow: none;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab-active{
+  background: #db3228;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab+.ant-tabs-tab {
+  margin: 0 0 0 10px;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-tabs-top >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs-bottom >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs-top >div>.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs-bottom >div>.ant-tabs-nav::before{
+  border-bottom: none;
+}
+
+/* 1) 활성된 탭 아래에 생기는 ink bar 자체를 안 보이게 처리 */
+.ant-tabs-ink-bar {
+  display: none !important;
+}
+
+/* 2) 탭(텍스트) 호버 시 보이는 밑줄(border-bottom) 없애기 */
+.ant-tabs-tab:hover .ant-tabs-tab-btn {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+/* 3) 탭 호버 시 텍스트 컬러가 바뀌지 않도록 덮어쓰기 */
+.ant-tabs-tab:hover .ant-tabs-tab-btn {
+  /* 기본 글자색(비활성 텍스트 색상)을 그대로 유지 */
+  color: #fff !important;
+}
+
+/* 4) 활성(active) 탭 상태의 컬러(클릭된 탭)도 그대로 두려면 아래처럼 지정 */
+/* (만약 활성 상태에도 다른 색으로 고정하고 싶다면 해당 값으로 바꿔주세요) */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff !important;
+}
+
+/* project contents */
+:where(.css-dev-only-do-not-override-mc1tut).ant-card{
+  padding-bottom: 1rem;
+  width: calc((100% - 4rem) / 3); /* 3개씩 한 줄에 배치, 총 gap 2rem */
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-list *{
+  margin-top: 7px;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-body{
+  padding: 0 !important;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-meta-title{
+  font-size: 28px;
+  color: #db3228;
+  font-weight: bold;
+}
+
+/* project btn */
+.mainBtn{
+  width: 88px;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem;
+  font-family: 'Noto Serif KR', serif;
+}
+.leftButton{
+  background: #db3228;
+  /* margin-left: 0.1rem; */
+}
+.leftButton:hover{
+  background: #fdfbf5 !important;
+  color: #db3228 !important;
+  border: 1px solid #db3228 !important;
+  font-weight: bold;
+}
+.rightButton{
+  background: #191919;
+}
+.rightButton:hover{
+  background: #fdfbf5 !important;
+  color: #191919 !important;
+  border: 1px solid #191919 !important;
+  font-weight: bold;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-body::after{
+  display: none;
+}
+
+/* footer */
+.footerWrap{
+  border-top: 1px solid #191919;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
+}
+.linkA {
+  cursor: pointer;
+}
+.linkA a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none; 
+  color: inherit;        
+}
+.linkA a:hover {
+  opacity: 0.8;         
+}
+
+/* 반응형 */
+@media (max-width: 1700px) {
+  /* main */
+  .main .rightSection{
+    width: 703px;
+  }
+  .main .rightSection .photo{
+    height: 600px;
+  }
+  .main .rightSection .photo img{
+    object-fit: fill;
+  }
+  .main .leftSection .txtBox{
+    margin-top: 0rem;
+  }
+  .main .leftSection .imgBox{
+    margin-top: 4rem;
+  }
+  .main{
+    height: auto;
+    /* padding: 3.75rem 0 1rem 0; */
+  }
+
+  /* Section1 */
+  .section01 .sectionRight .box p{
+    min-height: 38px;
+  }
+
+  /* Section2 - MyTabs*/
+
+
+}
+
+@media (max-width: 1500px) {
+  /* main */
+  .main .rightSection{
+    width: 603px;
+  }
+  .main .rightSection .photo{
+    height: 550px;
+  }
+  .main .leftSection .imgBox img{
+    width: 100px;
+  }
+  .main .leftSection{
+    height: 550px;
+  }
+
+  /* Section1 */
+  .section01 .sectionRight .box:nth-child(1) img,
+  .section01 .sectionRight .box:nth-child(6) img,
+  .section01 .sectionRight .box:nth-child(7) img{
+    width: 45px;
+  }
+  .section01 .sectionRight .box:nth-child(2) img,
+  .section01 .sectionRight .box:nth-child(4) img,
+  .section01 .sectionRight .box:nth-child(5) img{
+    width: 44px;
+  }
+  .section01 .sectionRight .box:nth-child(3) img{
+    width: 43px;
+  }
+  .section01 .sectionRight .box p{
+    font-size: 1.1rem;
+  }
+  .section01{
+    height: auto;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  /* Section2 - MyTabs */
+  :where(.css-dev-only-do-not-override-mc1tut).ant-card{
+  width: calc((100% - 2rem) / 2); 
+  }
+
+}
+
+@media (max-width: 1300px) {
+  /* main */
+  .main{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .main .leftSection{
+    width: 100%;
+    height: auto;
+  }
+  .main .leftSection .imgBox{
+    margin-top: 0rem;
+  }
+  .main .leftSection h2{
+    font-size: 3rem;
+  }
+  .main .leftSection .txtBox p{
+    font-size: 1rem;
+  }
+  .main .rightSection{
+    width: 100%;
+    height: auto;
+  }
+
+  /* Section2 - MyTabs */
+  .section02 .title{
+    padding: 1rem 0 3rem 0;
+  }
+  .section02 .title h2{
+    font-size: 3rem;
+  }
+
+
+}
+
+@media (max-width: 1100px) {
+  /* Section1 */
+  .section01{
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 0 3rem 0;
+  }
+  .section01 .sectionLeft{
+    width: 100%;
+  }
+  .section01 .sectionLeft::after{
+    display: none;
+  }
+  .section01 .sectionRight{
+    width: 100%;
+  }
+  .section01 .sectionRight .box p{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  /* Section2 - MyTabs */
+  :where(.css-dev-only-do-not-override-mc1tut).ant-card{
+  width: 100%; 
+  }
+  .img-wrapper{
+    height: auto !important;
+  }
+
+}
+
+@media (max-width: 900px) {
+  /* Header */
+  .header_Wrap h5{
+    font-size: 1.125rem;
+  }
+  .header_Wrap .clock p{
+    font-size: 1.125rem;
+  }
+
+  /* main */
+  .main .rightSection .photo{
+    height: 450px;
+  }
+
+}
+
+@media (max-width: 840px) {
+  /* Section1 */
+  .section01 .sectionRight{
+    flex-wrap: wrap;
+  }
+  .section01 .sectionRight .box{
+    width: calc((100% - 2rem) / 6);
+  }
+
+}
+
+@media (max-width: 720px) {
+  /* Section1 */
+  .section01 .sectionRight .box{
+    width: calc((100% - 2rem) / 5);
+  }
+
+}
+
+@media (max-width: 700px) {
+  /* main */
+  .main .leftSection h2{
+    font-size: 2.5rem;
+  }
+  .main .leftSection .txtBox h4{
+    font-size: 1.6rem;
+  }
+  .m_Thidden{
+    display: none;
+  }
+
+  /* Section2 - MyTabs */
+  :where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab{
+    font-size: 14px !important;
+  }
+  :where(.css-dev-only-do-not-override-mc1tut).ant-tabs >.ant-tabs-nav .ant-tabs-nav-list, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+  :where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+    margin: 0;
+  }
+  .section02 .title h2{
+    font-size: 2.5rem;
+  }
+  .cont_txt2{
+    flex-wrap: wrap !important;
+  }
+
+
+}
+
+@media (max-width: 640px) {
+  /* Header */
+  .header_Wrap h5{
+    font-size: 1rem;
+  }
+  .header_Wrap .clock p{
+    font-size: 1rem;
+  }
+
+  /* main */
+  .main .leftSection h2{
+    font-size: 2rem;
+  }
+    .main .leftSection .txtBox h4{
+    font-size: 1.5rem;
+  }
+  .main .leftSection .imgBox img{
+    width: 75px;
+  }
+  .main .rightSection .photo{
+    height: 350px;
+  }
+
+  /* Section2 - MyTabs */
+  .section02 .title h2{
+    font-size: 2rem;
+  }
+  .section02 .title{
+    padding: 0rem 0 2rem 0;
+  }
+  .mainBtn{
+    width: 80px;
+    height: 33px;
+  }
+  .cont_txt{
+    font-size: 1rem !important;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  /* main */
+  .main .rightSection .photo{
+    height: 300px;
+  }
+
+  /* Section1 */
+  /* .section01 .sectionRight .box{
+    width: calc((100% - 2rem) / 4);
+  } */
+
+  /* Section2 - MyTabs */
+  :where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-meta-title{
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  /* Header */
+  .header_Wrap{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .header_Wrap h5{
+    margin: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  /* main */
+  .main .rightSection .photo{
+    height: 250px;
+  }
+
+}

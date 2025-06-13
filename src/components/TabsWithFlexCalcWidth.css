@@ -1,0 +1,32 @@
+/* wrapper에만 radius + 클리핑 */
+.img-wrapper {
+  width: 100%;
+  height: 353px;
+  overflow: hidden;       /* 클리핑 */
+  border-radius: 18px;    /* 둥글게 자르기 */
+  cursor: pointer;
+}
+
+/* img는 wrapper 안에서만 확대, radius는 wrapper가 담당 */
+.card-hover-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  /* border-radius는 과감하게 지우세요! */
+}
+
+.card-hover-img:hover {
+  transform: scale(1.05);
+  /* border-radius: 18px; <-- 이걸 지우면 wrapper가 깔끔하게 둥글게 잘라줘요 */
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-cover >*{
+  border-radius: 18px;
+}
+:where(.css-dev-only-do-not-override-mc1tut).ant-card-bordered .ant-card-cover{
+  margin-top: 0px !important; 
+  margin-inline-start: 0px !important; 
+  margin-inline-end: 0px !important;
+}
