@@ -222,7 +222,7 @@ body {
 .section02 .project_Tab{
   margin-top: 4rem
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab{
+.ant-tabs .ant-tabs-tab{
   padding: 1rem;
   background: #191919;
   color: #fff;
@@ -237,17 +237,17 @@ body {
   align-items: center;
   justify-content: center;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
   color: #fff;
   text-shadow: none;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab-active{
+.ant-tabs .ant-tabs-tab-active{
   background: #db3228;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab+.ant-tabs-tab {
+.ant-tabs .ant-tabs-tab+.ant-tabs-tab {
   margin: 0 0 0 10px;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-tabs-top >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs-bottom >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs-top >div>.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs-bottom >div>.ant-tabs-nav::before{
+.ant-tabs-top >.ant-tabs-nav::before, .ant-tabs-bottom >.ant-tabs-nav::before, .ant-tabs-top >div>.ant-tabs-nav::before, .ant-tabs-bottom >div>.ant-tabs-nav::before{
   border-bottom: none;
 }
 
@@ -275,17 +275,17 @@ body {
 }
 
 /* project contents */
-:where(.css-dev-only-do-not-override-mc1tut).ant-card{
+.ant-card{
   padding-bottom: 1rem;
   width: calc((100% - 4rem) / 3); /* 3개씩 한 줄에 배치, 총 gap 2rem */
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-list *{
+.ant-list *{
   margin-top: 7px;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-body{
+.ant-card .ant-card-body{
   padding: 0 !important;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-meta-title{
+.ant-card .ant-card-meta-title{
   font-size: 28px;
   color: #db3228;
   font-weight: bold;
@@ -320,7 +320,7 @@ body {
   border: 1px solid #191919 !important;
   font-weight: bold;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-body::after{
+.ant-card .ant-card-body::after{
   display: none;
 }
 
@@ -420,7 +420,7 @@ body {
 
 @media (max-width: 1400px) {
   /* Section2 - MyTabs */
-  :where(.css-dev-only-do-not-override-mc1tut).ant-card{
+  .ant-card{
   width: calc((100% - 2rem) / 2); 
   }
 
@@ -485,7 +485,7 @@ body {
 
 @media (max-width: 1024px) {
   /* Section2 - MyTabs */
-  :where(.css-dev-only-do-not-override-mc1tut).ant-card{
+  .ant-card{
   width: 100%; 
   }
   .img-wrapper{
@@ -542,16 +542,17 @@ body {
   }
 
   /* Section2 - MyTabs */
-  :where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab{
+  .ant-tabs .ant-tabs-tab{
     font-size: 14px !important;
   }
-  :where(.css-dev-only-do-not-override-mc1tut).ant-tabs >.ant-tabs-nav .ant-tabs-nav-list, :where(.css-dev-only-do-not-override-mc1tut).ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list{
+  .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list, 
+  .ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0.7rem;
   }
-  :where(.css-dev-only-do-not-override-mc1tut).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+  .ant-tabs .ant-tabs-tab+.ant-tabs-tab{
     margin: 0;
   }
   .section02 .title h2{
@@ -617,7 +618,7 @@ body {
   } */
 
   /* Section2 - MyTabs */
-  :where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-meta-title{
+  .ant-card .ant-card-meta-title{
     font-size: 24px;
   }
 
