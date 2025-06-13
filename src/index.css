@@ -16,13 +16,17 @@ body {
 /* font */
 @font-face {
   font-family: 'Bohemian Soul';
-  src: url('./assets/fonts/Bohemian Soul.woff2') format('woff2');
+  src: url('./assets/fonts/Bohemian Soul.woff2') format('woff2'),
+        url('./assets/fonts/Bohemian Soul.woff') format('woff'),
+        url('./assets/fonts/Bohemian Soul.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fraternite';
-  src: url('./assets/fonts/Fraternite.woff2') format('woff2');
+  src: url('./assets/fonts/Fraternite.woff2') format('woff2'),
+        url('./assets/fonts/Fraternite.ttf') format('ttf')
+        url('./assets/fonts/Fraternite.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
