@@ -2,6 +2,8 @@
 import React from "react";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
+import mainIcon01 from '../assets/images/main_icon01.png'
+import mainIcon02 from '../assets/images/main_img.png'
 
 const Main: React.FC = () => {
   return (
@@ -26,12 +28,12 @@ const Main: React.FC = () => {
             </p>
           </div>
           <div className="imgBox">
-            <img src="src/assets/images/main_icon01.png" alt="main_icon01" />
+            <img src={mainIcon01} alt="main_icon01" />
           </div>
         </div>
         <div className="rightSection">
           <div className="photo">
-            <img src="src/assets/images/main_img.png" alt="main_img" />
+            <img src={mainIcon02} alt="main_img" />
           </div>
         </div>
       </section>
