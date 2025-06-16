@@ -1,4 +1,6 @@
 import React from "react";
+import footerIcon01 from '../assets/images/velog_icon.png'
+import footerIcon02 from '../assets/images/github_icon.png'
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="src/assets/images/velog_icon.png" alt="Velog icon" />
+            <img src={footerIcon01} alt="Velog icon" />
             <p>Velog</p>
           </a>
         </div>
@@ -23,7 +25,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="src/assets/images/github_icon.png" alt="GitHub icon" />
+            <img src={footerIcon02} alt="GitHub icon" />
             <p>GitHub</p>
           </a>
         </div>

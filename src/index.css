@@ -14,6 +14,8 @@ body {
 }
 
 /* font */
+
+/* Bohemian Soul */
 @font-face {
   font-family: 'Bohemian Soul';
   src: url('./assets/fonts/Bohemian Soul.woff2') format('woff2'),
@@ -21,15 +23,102 @@ body {
         url('./assets/fonts/Bohemian Soul.otf') format('otf');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
+/* Fraternite */
 @font-face {
   font-family: 'Fraternite';
   src: url('./assets/fonts/Fraternite.woff2') format('woff2'),
-        url('./assets/fonts/Fraternite.ttf') format('ttf')
-        url('./assets/fonts/Fraternite.woff') format('woff');
+        url('./assets/fonts/Fraternite.woff') format('woff'),
+        url('./assets/fonts/Fraternite.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
+/* Noto Serif Kr */
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-ExtraLight.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-ExtraLight.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-ExtraLight.ttf') format('ttf');
+    font-weight: 200;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-Light.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-Light.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-Regular.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-Regular.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-Medium.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-Medium.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-SemiBold.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-SemiBold.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-Bold.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-Bold.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-ExtraBold.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-ExtraBold.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal; 
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Kr';
+    src: url('./assets/fonts/NotoSerifKR-Black.woff2') format('woff2'),
+          url('./assets/fonts/NotoSerifKR-Black.woff') format('woff'),
+          url('./assets/fonts/NotoSerifKR-Black.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal; 
+    font-display: swap;
+}
+
+
 
 /* common */
 .font_Fraternite{
@@ -251,7 +340,13 @@ body {
 .ant-tabs .ant-tabs-tab+.ant-tabs-tab {
   margin: 0 0 0 10px;
 }
-.ant-tabs-top >.ant-tabs-nav::before, .ant-tabs-bottom >.ant-tabs-nav::before, .ant-tabs-top >div>.ant-tabs-nav::before, .ant-tabs-bottom >div>.ant-tabs-nav::before{
+.ant-tabs .ant-tabs-nav{
+  margin: 0;
+}
+.ant-tabs-top >.ant-tabs-nav::before, 
+.ant-tabs-bottom >.ant-tabs-nav::before, 
+.ant-tabs-top >div>.ant-tabs-nav::before, 
+.ant-tabs-bottom >div>.ant-tabs-nav::before{
   border-bottom: none;
 }
 
@@ -293,6 +388,7 @@ body {
   font-size: 28px;
   color: #db3228;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 /* project btn */
