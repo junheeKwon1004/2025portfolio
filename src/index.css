@@ -767,6 +767,7 @@ body {
     overflow: visible;
     white-space: break-spaces;
     text-overflow: ellipsis;
+    font-size: 14px;
   }
 
 }
