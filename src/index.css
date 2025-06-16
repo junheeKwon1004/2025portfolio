@@ -689,6 +689,9 @@ body {
   }
 
   /* Section2 - MyTabs */
+  .ant-card .ant-card-meta-title{
+    font-size: 24px !important;
+  }
   .section02 .title h2{
     font-size: 2rem;
   }
@@ -701,6 +704,17 @@ body {
   }
   .cont_txt{
     font-size: 1rem !important;
+  }
+
+  /* footer */
+  .footerWrap{
+    flex-wrap: wrap;
+  }
+  .footerWrap .Fbox{
+    width: 100%;
+  }
+  .footerWrap .Fbox a p{
+    margin: 0;
   }
 
 
@@ -719,7 +733,7 @@ body {
 
   /* Section2 - MyTabs */
   .ant-card .ant-card-meta-title{
-    font-size: 24px;
+    font-size: 20px !important;
   }
 
 }
