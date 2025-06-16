@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // 이미지 import
 import skillIcon01 from "../assets/images/skill_icon01.png";
@@ -10,9 +10,31 @@ import skillIcon06 from "../assets/images/skill_icon06.png";
 import skillIcon07 from "../assets/images/skill_icon07.png";
 
 const Section1: React.FC = () => {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
   return (
-    <section className="p-6 bg-white section01">
-      <div className="sectionLeft">  
+    <section
+      ref={sectionRef}
+      className={`p-6 bg-white section01 ${inView ? "animate-line" : ""}`}
+    >
+      <div className="sectionLeft">
         <h3 className="font_Fraternite">My Skill</h3>
       </div>
       <div className="sectionRight">
