@@ -717,7 +717,23 @@ body {
     margin: 0;
   }
 
+}
 
+@media (max-width: 540px) {
+  /* Section2 - MyTabs */
+  .ant-card .ant-card-meta-title{
+    font-size: 20px !important;
+    margin-top: 1rem;
+  }
+  .cont_txt{
+    margin-top: 10px;   
+    max-height: fit-content !important;
+    min-height: auto !important;
+
+  }
+  .cont_txt2{
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -730,11 +746,6 @@ body {
   /* .section01 .sectionRight .box{
     width: calc((100% - 2rem) / 4);
   } */
-
-  /* Section2 - MyTabs */
-  .ant-card .ant-card-meta-title{
-    font-size: 20px !important;
-  }
 
 }
 
