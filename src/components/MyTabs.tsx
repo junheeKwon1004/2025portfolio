@@ -27,7 +27,8 @@ interface ProjectItem {
 const nineCardData: ProjectItem[] = [
   {
     title: "Naver",
-    description: "네이버 클론 코딩을 통한 시맨틱 마크업의 중요성과 접근성을 위한 IR 기법과 효율적인 이미지 로딩을 위한 IS 기법",
+    description:
+      "네이버 클론 코딩을 통한 시맨틱 마크업의 중요성과 접근성을 위한 IR 기법과 효율적인 이미지 로딩을 위한 IS 기법",
     detailUrl: "https://velog.io/@htt1247/React-%EC%9C%A0%EC%A0%80%EC%A0%95%EB%B3%B4-%ED%8C%9D%EC%97%85-%EA%B5%AC%ED%98%84",
     githubUrl: "https://github.com/your-repo/naver-clone",
     imageSrc: naverImg,
@@ -63,7 +64,8 @@ const nineCardData: ProjectItem[] = [
   },
   {
     title: "React Chatting Service",
-    description: "실시간 채팅 서비스 구현 (Socket.io), 리액트로 오픈 채팅 서비스를 구현했고 컴포넌트와 Props의 관계, UseState, UseEffect 로 컴포넌트를 구성했음",
+    description:
+      "실시간 채팅 서비스 구현 (Socket.io), 리액트로 오픈 채팅 서비스를 구현했고 컴포넌트와 Props의 관계, UseState, UseEffect 로 컴포넌트를 구성했음",
     detailUrl: "https://example.com/chat-detail",
     githubUrl: "https://github.com/your-repo/chat-service",
     imageSrc: chatImg,
@@ -108,10 +110,8 @@ const nineCardData: ProjectItem[] = [
   },
 ];
 
-const filterByIndices = (
-  source: ProjectItem[],
-  indices: number[]
-) => source.filter((_, idx) => indices.includes(idx));
+const filterByIndices = (source: ProjectItem[], indices: number[]) =>
+  source.filter((_, idx) => indices.includes(idx));
 
 const renderList = (dataSource: ProjectItem[]) => (
   <div className="project-list">
@@ -121,9 +121,20 @@ const renderList = (dataSource: ProjectItem[]) => (
         hoverable={false}
         className="project-card"
         cover={
-          <div className="img-wrapper">
-            <img className="card-hover-img" alt={item.title} src={item.imageSrc} />
-          </div>
+          item.detailUrl ? (
+            <a
+              href={item.detailUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="img-wrapper"
+            >
+              <img className="card-hover-img" alt={item.title} src={item.imageSrc} />
+            </a>
+          ) : (
+            <div className="img-wrapper">
+              <img className="card-hover-img" alt={item.title} src={item.imageSrc} />
+            </div>
+          )
         }
       >
         <Card.Meta title={item.title} className="project-meta" />
@@ -132,7 +143,8 @@ const renderList = (dataSource: ProjectItem[]) => (
           <div className="tags">
             {item.tags.map((tag, idx) => (
               <span key={idx}>
-                {tag}{idx < item.tags.length - 1 && '\u00A0\u00A0\u00A0'}
+                {tag}
+                {idx < item.tags.length - 1 && "\u00A0\u00A0\u00A0"}
               </span>
             ))}
           </div>
@@ -140,12 +152,22 @@ const renderList = (dataSource: ProjectItem[]) => (
         </div>
         <div className="button-group">
           {item.detailUrl && (
-            <Button type="primary" href={item.detailUrl} target="_blank" className="mainBtn leftButton">
+            <Button
+              type="primary"
+              href={item.detailUrl}
+              target="_blank"
+              className="mainBtn leftButton"
+            >
               Site
             </Button>
           )}
           {item.githubUrl && (
-            <Button type="default" href={item.githubUrl} target="_blank" className="mainBtn rightButton">
+            <Button
+              type="default"
+              href={item.githubUrl}
+              target="_blank"
+              className="mainBtn rightButton"
+            >
               Velog
             </Button>
           )}

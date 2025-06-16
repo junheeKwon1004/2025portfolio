@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="Fbox linkA">
           <a
-            href="https://github.com/yourUsername"
+            href="https://github.com/junheeKwon1004"
             target="_blank"
             rel="noopener noreferrer"
           >

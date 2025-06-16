@@ -22,10 +22,10 @@
   transform: scale(1.05);
   /* border-radius: 18px; <-- 이걸 지우면 wrapper가 깔끔하게 둥글게 잘라줘요 */
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-card .ant-card-cover >*{
+.ant-card .ant-card-cover >*{
   border-radius: 18px;
 }
-:where(.css-dev-only-do-not-override-mc1tut).ant-card-bordered .ant-card-cover{
+.ant-card-bordered .ant-card-cover{
   margin-top: 0px !important; 
   margin-inline-start: 0px !important; 
   margin-inline-end: 0px !important;
