@@ -875,6 +875,10 @@ body {
 }
 
 @media (max-width: 400px) {
+  /* body */
+  .body_wrap{
+    padding: 1rem;
+  }
   /* Header */
   .header_Wrap{
     flex-wrap: wrap;
