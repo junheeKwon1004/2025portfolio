@@ -879,6 +879,8 @@ body {
   .header_Wrap{
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
   }
   .header_Wrap h5{
     margin: 0;
