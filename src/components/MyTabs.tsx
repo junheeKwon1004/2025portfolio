@@ -29,7 +29,7 @@ const nineCardData: ProjectItem[] = [
     title: "Naver",
     description:
       "네이버 클론 코딩을 통한 시맨틱 마크업의 중요성과 접근성을 위한 IR 기법과 효율적인 이미지 로딩을 위한 IS 기법",
-    detailUrl: "/projects/naver/index.html",
+    detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/naver/",
     githubUrl: "https://github.com/your-repo/naver-clone",
     imageSrc: naverImg,
     tags: ["시맨틱 마크업", "CSS", "IR & IS & Blind"],
