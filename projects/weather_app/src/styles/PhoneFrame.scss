@@ -1,0 +1,41 @@
+/* styles/PhoneFrame.scss */
+.phone-frame {
+  // width: 390px;
+  // height: 844px;
+  // margin: 2rem auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  border: 10px solid #222;
+  outline: 4px solid #ddd; 
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 28px;
+    background: #111;
+    border-radius: 20px;
+  }
+}
+
+.weather_wrap {
+  /* max-width: 375px; 아이폰 화면 너비 */
+  padding: 1.5rem;
+  border-radius: 30px;
+  /* background: linear-gradient(to bottom, #74b9ff, #a29bfe);  */
+  // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* min-height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}

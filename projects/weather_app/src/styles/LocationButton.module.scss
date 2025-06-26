@@ -1,0 +1,16 @@
+.locationBtn {
+  background-color: royalblue;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer; // 클릭 가능한 모양
+  transition: background-color 0.2s ease; // 부드러운 색상 전환
+
+  &:hover {
+    background-color: #0052cc; // royalblue보다 살짝 진한 색
+  }
+}

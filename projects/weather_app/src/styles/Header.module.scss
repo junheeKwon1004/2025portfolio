@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+
+    .react {
+      color: royalblue;
+      font-size: 2rem;
+    }
+  }
+
+  button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+  svg {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+}

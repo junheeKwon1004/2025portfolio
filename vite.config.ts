@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         naver: resolve(__dirname, 'projects/naver/index.html'),
+        weather: resolve(__dirname, 'projects/weather_app/index.html'),
       },
     },
   },
