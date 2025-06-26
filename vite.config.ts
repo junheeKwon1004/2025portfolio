@@ -6,7 +6,6 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   base: '/2025portfolio',
@@ -15,7 +14,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         naver: resolve(__dirname, 'projects/naver/index.html'),
-        weather: resolve(__dirname, 'projects/weather_app/index.html'),
+        weather_app: resolve(__dirname, 'projects/weather_app/index.html'), 
       },
     },
   },
