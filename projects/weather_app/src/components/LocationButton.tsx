@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from '../styles/LocationButton.module.scss';
 import axios from 'axios';
+import type { WeatherData } from '../types'; // ✅ 여기서만 타입 import
 
 interface LocationButtonProps {
-  setWeatherData: React.Dispatch<React.SetStateAction<any>>;
+  setWeatherData: React.Dispatch<React.SetStateAction<WeatherData | null>>;
 }
 
 const LocationButton: React.FC<LocationButtonProps> = ({ setWeatherData }) => {
@@ -20,8 +21,8 @@ const LocationButton: React.FC<LocationButtonProps> = ({ setWeatherData }) => {
         const { latitude, longitude } = position.coords;
         try {
           const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
-          const { data } = await axios.get(url);
-          setWeatherData(data);
+          const response = await axios.get<WeatherData>(url);
+          setWeatherData(response.data);
         } catch (err) {
           alert('위치 기반 날씨 정보를 불러오지 못했습니다.');
         }

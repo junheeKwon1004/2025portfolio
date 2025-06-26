@@ -25,12 +25,17 @@ interface WeatherCardProps {
 }
 
 const WeatherCard: React.FC<WeatherCardProps> = ({ data }) => {
-  const firstItem = data.list[0]; // 가장 가까운 시간대 예보
-  const temperatureC = Math.round((firstItem.main.temp - 273.15) * 10) / 10; // 섭씨 변환
+  const firstItem = data.list[0];
+
+  if (!firstItem) {
+    return <div className={styles.card}>날씨 정보를 불러오는 중입니다...</div>;
+  }
+
+  const temperatureC = Math.round((firstItem.main.temp - 273.15) * 10) / 10;
   const weather = firstItem.weather[0].main;
   const iconCode = firstItem.weather[0].icon;
   const weatherIconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-  const popPercent = Math.round(firstItem.pop * 100); // 강수확률 (%)
+  const popPercent = Math.round(firstItem.pop * 100);
 
   return (
     <div className={styles.card}>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Header.module.scss';
 import { PlusOutlined, BulbOutlined } from '@ant-design/icons';
 import { Modal, Button } from 'antd';
@@ -21,7 +21,8 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
       </h1>
 
       <button onClick={openModal} className={styles.settingBtn}>
-        <PlusOutlined /> 설정
+        <PlusOutlined style={{ marginRight: '5px' }} />
+        <span>설정</span>
       </button>
 
       <Modal

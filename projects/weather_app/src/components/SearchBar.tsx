@@ -1,24 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/SearchBar.module.scss';
 import axios from 'axios';
-
-interface ForecastItem {
-  dt_txt: string;
-  main: {
-    temp: number;
-  };
-  weather: {
-    main: string;
-  }[];
-  pop: number;
-}
-
-interface WeatherData {
-  city: {
-    name: string;
-  };
-  list: ForecastItem[];
-}
+import type { WeatherData } from '../types'; // ✅ 여기서만 타입 import
 
 interface SearchBarProps {
   setWeatherData: React.Dispatch<React.SetStateAction<WeatherData | null>>;
@@ -32,7 +15,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ setWeatherData }) => {
     if (e.key === 'Enter' && location.trim()) {
       try {
         const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}`;
-        const { data } = await axios.get(url);
+        const { data } = await axios.get<WeatherData>(url);
         setWeatherData(data);
       } catch (err) {
         alert('날씨 데이터를 가져오는 데 실패했습니다.');
