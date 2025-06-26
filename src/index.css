@@ -597,14 +597,17 @@ body {
   .section01 .sectionRight .box:nth-child(6) img,
   .section01 .sectionRight .box:nth-child(7) img{
     width: 45px;
+    object-fit: none;
   }
   .section01 .sectionRight .box:nth-child(2) img,
   .section01 .sectionRight .box:nth-child(4) img,
   .section01 .sectionRight .box:nth-child(5) img{
     width: 44px;
+    object-fit: none;
   }
   .section01 .sectionRight .box:nth-child(3) img{
     width: 43px;
+    object-fit: none;
   }
   .section01 .sectionRight .box p{
     font-size: 1.1rem;

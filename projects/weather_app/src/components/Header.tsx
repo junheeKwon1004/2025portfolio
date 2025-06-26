@@ -21,8 +21,8 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
       </h1>
 
       <button onClick={openModal} className={styles.settingBtn}>
-        <PlusOutlined />
-        {/* <span>설정</span> */}
+        {/* <PlusOutlined /> */}
+        <span>Mode</span>
       </button>
 
       <Modal

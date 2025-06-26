@@ -50,7 +50,7 @@ const nineCardData: ProjectItem[] = [
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/weather_app/",
     githubUrl: "https://github.com/your-repo/weather-app",
     imageSrc: weatherImg,
-    tags: ["React", "API 연동", "JSX", "Open Weather API"],
+    tags: ["React", "SCSS", "API 연동", "JSX", "Open Weather API"],
     contribution: "기여도 100%",
   },
   // {
