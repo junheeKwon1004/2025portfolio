@@ -51,7 +51,7 @@ const WeeklyForecast: React.FC<WeeklyForecastProps> = ({ data }) => {
                 alt={item.weather[0].main}
               />
             </div>
-            <div>{getDayName(item.dt_txt)}</div>
+            <div className={styles.txt}>{getDayName(item.dt_txt)}</div>
           </div>
         ))}
       </div>

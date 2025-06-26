@@ -21,7 +21,6 @@
 
 .icon {
   font-size: 1.5rem;
-  margin-bottom: 5px;
 
   // 날씨 아이콘 이미지 스타일 추가
   img {
@@ -29,4 +28,8 @@
     height: 60px;
     object-fit: contain;
   }
+}
+
+.txt{
+  margin-top: -0.5rem;
 }
