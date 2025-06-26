@@ -35,15 +35,15 @@ const nineCardData: ProjectItem[] = [
     tags: ["시맨틱 마크업", "CSS", "IR & IS & Blind"],
     contribution: "기여도 100%",
   },
-  {
-    title: "Chrome app",
-    description: "자바스크립트를 활용한 웹서비스로 날씨 api, 시간 api 데이터를 받아와 기능을 구현",
-    detailUrl: "https://example.com/chrome-detail",
-    githubUrl: "https://github.com/your-repo/chrome-extension",
-    imageSrc: chromeImg,
-    tags: ["시맨틱 마크업", "JavaScript", "Open Weather API"],
-    contribution: "기여도 100%",
-  },
+  // {
+  //   title: "Chrome app",
+  //   description: "자바스크립트를 활용한 웹서비스로 날씨 api, 시간 api 데이터를 받아와 기능을 구현",
+  //   detailUrl: "https://example.com/chrome-detail",
+  //   githubUrl: "https://github.com/your-repo/chrome-extension",
+  //   imageSrc: chromeImg,
+  //   tags: ["시맨틱 마크업", "JavaScript", "Open Weather API"],
+  //   contribution: "기여도 100%",
+  // },
   {
     title: "Weather app",
     description: "리액트와 JSX 문법을 활용했고 Open Weather API를 이용하여 실시간 날씨 정보를 조회할 수 있음",
@@ -53,25 +53,25 @@ const nineCardData: ProjectItem[] = [
     tags: ["React", "API 연동", "JSX", "Open Weather API"],
     contribution: "기여도 100%",
   },
-  {
-    title: "React JS Movie Service",
-    description: "리액트를 활용해 간단한 영화 웹 서비스를 만들고",
-    detailUrl: "https://example.com/movie-detail",
-    githubUrl: "https://github.com/your-repo/react-movie",
-    imageSrc: movieImg,
-    tags: ["React", "Node.JS", "CSS"],
-    contribution: "기여도 100%",
-  },
-  {
-    title: "React Chatting Service",
-    description:
-      "실시간 채팅 서비스 구현 (Socket.io), 리액트로 오픈 채팅 서비스를 구현했고 컴포넌트와 Props의 관계, UseState, UseEffect 로 컴포넌트를 구성했음",
-    detailUrl: "https://example.com/chat-detail",
-    githubUrl: "https://github.com/your-repo/chat-service",
-    imageSrc: chatImg,
-    tags: ["Socket.io", "Node.js", "WebSocket"],
-    contribution: "기여도 35%",
-  },
+  // {
+  //   title: "React JS Movie Service",
+  //   description: "리액트를 활용해 간단한 영화 웹 서비스를 만들고",
+  //   detailUrl: "https://example.com/movie-detail",
+  //   githubUrl: "https://github.com/your-repo/react-movie",
+  //   imageSrc: movieImg,
+  //   tags: ["React", "Node.JS", "CSS"],
+  //   contribution: "기여도 100%",
+  // },
+  // {
+  //   title: "React Chatting Service",
+  //   description:
+  //     "실시간 채팅 서비스 구현 (Socket.io), 리액트로 오픈 채팅 서비스를 구현했고 컴포넌트와 Props의 관계, UseState, UseEffect 로 컴포넌트를 구성했음",
+  //   detailUrl: "https://example.com/chat-detail",
+  //   githubUrl: "https://github.com/your-repo/chat-service",
+  //   imageSrc: chatImg,
+  //   tags: ["Socket.io", "Node.js", "WebSocket"],
+  //   contribution: "기여도 35%",
+  // },
   {
     title: "고려대학교 건축학과",
     description: "네브루탈리즘처럼 선을 강조한 디자인을 중점으로 작업했고 정형화된 디자인보단 간결한 여백의 미를 추구함",
@@ -177,11 +177,11 @@ const renderList = (dataSource: ProjectItem[]) => (
   </div>
 );
 
-const apiIndices = [1, 2, 3];
-const reactIndices = [2, 3, 4];
-const projectIndices = [5, 6, 7, 8];
-const jsIndices = [0, 1, 5, 6, 7, 8];
-const responsiveIndices = [5, 6, 7, 8];
+const apiIndices = [1];
+const reactIndices = [1];
+const projectIndices = [2, 3, 4, 5];
+const jsIndices = [0, 2, 3, 4, 5];
+const responsiveIndices = [2, 3, 4, 5];
 
 const items: TabsProps["items"] = [
   { key: "all", label: "All", children: <>{renderList(nineCardData)}</> },
