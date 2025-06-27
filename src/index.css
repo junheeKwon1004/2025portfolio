@@ -275,6 +275,12 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.mainVideo {
+  width: 100%;
+  height: 645px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
 
 /* section01 */
 .section01{
@@ -585,6 +591,9 @@ body {
   .main .rightSection .photo{
     height: 550px;
   }
+  .mainVideo{
+    height: 550px;
+  }
   .main .leftSection .imgBox img{
     width: 100px;
   }
@@ -707,6 +716,9 @@ body {
   .main .rightSection .photo{
     height: 450px;
   }
+  .mainVideo{
+    height: 450px;
+  }
 
 }
 
@@ -785,7 +797,11 @@ body {
     width: 75px;
   }
   .main .rightSection .photo{
-    height: 350px;
+    height: auto;
+    background: none;
+  }
+  .mainVideo{
+    height: auto;
   }
 
   /* Section2 - MyTabs */
@@ -842,11 +858,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  /* main */
-  .main .rightSection .photo{
-    height: 300px;
-  }
-
   /* Section1 */
   /* .section01 .sectionRight .box{
     width: calc((100% - 2rem) / 4);
@@ -883,11 +894,14 @@ body {
     padding: 1rem;
   }
   /* Header */
+  .header{
+    margin-top: 0;
+  }
   .header_Wrap{
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .header_Wrap h5{
     margin: 0;
@@ -896,8 +910,5 @@ body {
 
 @media (max-width: 380px) {
   /* main */
-  .main .rightSection .photo{
-    height: 250px;
-  }
 
 }

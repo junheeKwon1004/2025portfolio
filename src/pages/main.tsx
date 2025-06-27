@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
 import mainIcon01 from '../assets/images/main_icon01.png';
-import mainIcon02 from '../assets/images/main_img.png';
+import videoFile from '../assets/video/main_video.mp4';
 
 const Main: React.FC = () => {
   const mainSectionRef = useRef<HTMLElement | null>(null);
@@ -58,7 +58,16 @@ const Main: React.FC = () => {
         </div>
         <div className="rightSection">
           <div className="photo">
-            <img src={mainIcon02} alt="main_img" />
+            <div className="photo">
+              <video
+                src={videoFile}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="mainVideo"
+              />
+            </div>
           </div>
         </div>
       </section>
