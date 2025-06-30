@@ -3,8 +3,8 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ['main'] # main 브랜치에 push될 때 작동
-  workflow_dispatch:   # 수동 실행도 가능하게 설정
+    branches: ['main']
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -37,13 +37,18 @@ jobs:
       - name: Build with Vite
         run: npm run build
 
+      - name: 🔁 Copy naver static files into dist
+        run: |
+          mkdir -p dist/projects/naver
+          cp -r projects/naver/* dist/projects/naver/
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Vite의 기본 output 디렉토리
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
