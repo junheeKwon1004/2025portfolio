@@ -16,7 +16,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        naver: resolve(__dirname, 'projects/naver/index.html'),
+        // naver: resolve(__dirname, 'projects/naver/index.html'),
         weather_app: resolve(__dirname, 'projects/weather_app/index.html'), 
       },
     },
