@@ -787,6 +787,9 @@ body {
   }
 
   /* main */
+  .main{
+    padding: 2rem 0;
+  }
   .main .leftSection h2{
     font-size: 2rem;
   }
@@ -802,6 +805,11 @@ body {
   }
   .mainVideo{
     height: auto;
+  }
+
+  /* Section1 */
+  .section01{
+    padding: 1rem 0 2rem;
   }
 
   /* Section2 - MyTabs */
@@ -820,6 +828,9 @@ body {
   }
   .cont_txt{
     font-size: 1rem !important;
+  }
+  .section02 .project_Tab{
+    margin-top: 2.5rem;
   }
 
   /* footer */

@@ -30,7 +30,7 @@ const nineCardData: ProjectItem[] = [
     description:
       "네이버 클론 코딩을 통한 시맨틱 마크업의 중요성과 접근성을 위한 IR 기법과 효율적인 이미지 로딩을 위한 IS 기법",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/naver/",
-    githubUrl: "https://github.com/your-repo/naver-clone",
+    githubUrl: "",
     imageSrc: naverImg,
     tags: ["시맨틱 마크업", "CSS", "IR & IS & Blind"],
     contribution: "기여도 100%",
@@ -48,7 +48,7 @@ const nineCardData: ProjectItem[] = [
     title: "Weather app",
     description: "리액트와 JSX 문법을 활용했고 Open Weather API를 이용하여 실시간 날씨 정보를 조회할 수 있음",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/weather_app/",
-    githubUrl: "https://github.com/your-repo/weather-app",
+    githubUrl: "",
     imageSrc: weatherImg,
     tags: ["React", "SCSS", "API 연동", "JSX", "Open Weather API"],
     contribution: "기여도 100%",
