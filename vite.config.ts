@@ -8,7 +8,7 @@ const __dirname = dirname(__filename)
 
 export default defineConfig({
   plugins: [react()],
-  // base: '/2025portfolio/',
+  base: '/2025portfolio/',
   optimizeDeps: {
     include: ['@ant-design/icons'], // ✅ 추가
   },
