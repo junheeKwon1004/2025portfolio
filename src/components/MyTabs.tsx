@@ -5,10 +5,10 @@ import type { TabsProps } from "antd";
 import "./TabsWithFlexCalcWidth.css";
 
 import naverImg from "../assets/images/naver.png";
-import chromeImg from "../assets/images/chrome.png";
+// import chromeImg from "../assets/images/chrome.png";
 import weatherImg from "../assets/images/weather.png";
-import movieImg from "../assets/images/movie.png";
-import chatImg from "../assets/images/chat.png";
+// import movieImg from "../assets/images/movie.png";
+// import chatImg from "../assets/images/chat.png";
 import koreaArchImg from "../assets/images/korea-arch.png";
 import koreaHealthImg from "../assets/images/korea-health.png";
 import myongjiImg from "../assets/images/myongji.png";
