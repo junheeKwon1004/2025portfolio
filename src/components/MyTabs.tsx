@@ -48,7 +48,7 @@ const nineCardData: ProjectItem[] = [
     title: "Weather app",
     description: "리액트와 JSX 문법을 활용했고 Open Weather API를 이용하여 실시간 날씨 정보를 조회할 수 있음",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/weather_app/",
-    githubUrl: "",
+    githubUrl: "https://junheekwon1004.github.io/2025portfolio/projects/weather_app/",
     imageSrc: weatherImg,
     tags: ["React", "SCSS", "API 연동", "JSX", "Open Weather API"],
     contribution: "기여도 100%",
