@@ -50,7 +50,7 @@ const Header: React.FC = () => {
         ref={wrapRef}
         className={`header_Wrap flex justify-between items-center ${inView ? "animate-line" : ""}`}
       >
-        <h5 className="text-lg font-bold">2025 PROJECTS</h5>
+        <h5 className="text-lg font-bold">2026 PROJECTS</h5>
         <div className="clock flex items-center gap-2">
           <div className="round w-3 h-3 bg-green-400 rounded-full animate-pulse" />
           <p>
