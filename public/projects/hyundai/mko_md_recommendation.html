@@ -1,0 +1,531 @@
+<!-- 
+    작업자: 권준희
+    TYPE : 기획전 MD 추천 
+    이벤트(온라인): 
+    H.oney : 
+    룰렛이벤트 : 
+    블랙등급업 : 
+    임직원등급업 : 
+-->
+<head>
+    <meta charset="utf-8">
+    <title>현대면세점</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="https://cdn.hddfs.com/front/js/M_KO/jquery-1.12.4.min.js?ver=395"></script>
+    <script src="https://cdn.hddfs.com/front/js/M_KO/jquery-ui.js?ver=395"></script>
+    <!-- <script src="../../../hddf-frontoffice-mo/src/main/webapp/js/M_KO/jquery.bxslider.js"></script> -->
+    <script src="https://cdn.hddfs.com/front/js/M_KO/swiper.min.js?ver=395"></script>
+    <script src="https://cdn.hddfs.com/front/js/M_KO/common.ui.js?ver=395"></script>
+    <link rel="shortcut icon" href="https://cdn.hddfs.com/front/images/KO/common/favicon_H.ico">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/jquery-ui.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/swiper.min.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/common.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/layout.css?ver=395">
+</head>
+<script src="../hyundai/include/mo_header.js"></script>
+<link rel="stylesheet" href="../hyundai/include/swiper.css">
+<script type="text/javascript" src="../hyundai/include/swiper.js"></script>
+<script src="../../common/js/common.js" type="module"></script>
+
+<!-- S : BO 등록 영역 -->
+<div id="targetSection">
+<style type="text/css">
+/*--- FONTS ---*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css');
+.evt__wrap {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Pretendard Variable", Pretendard, 'Noto Sans CJK KR', '본고딕', 'sans-serif', sans-serif;
+    overflow: hidden;
+}
+
+/* layout: MD_추천 키비주얼 */
+.key-visual__wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.key-visual__wrap .key-visual__texts{
+    display: flex;
+    padding: 15px 20px 17px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    background: #000;
+    color: #fff;
+}
+.key-visual__wrap .key-visual__texts .key-visual__labels{
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.key-visual__wrap .key-visual__texts .key-visual__labels span{
+    line-height: normal;
+    letter-spacing: -0.14px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.key-visual__wrap .key-visual__texts .key-visual__labels p{
+    text-align: right;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.key-visual__wrap .key-visual__texts h2{
+    line-height: 46px; 
+    letter-spacing: -0.36px;
+    font-size: 36px;
+    font-weight: 700;
+}
+.key-visual__wrap .key-visual__texts h4{
+    line-height: 24px; 
+    letter-spacing: -0.16px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* layout: MD_추천 배너 */
+.banner__wrap{
+    display: flex;
+    height: 407px;
+    padding: 50px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #575757;
+}
+.banner__wrap .banner header h2{
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 36px; 
+    letter-spacing: -0.28px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+}
+.banner__wrap .banner header h4{
+    text-align: center;
+    line-height: 24px; 
+    letter-spacing: -0.16px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner__wrap .banner section{
+    width: 335px;
+    height: 140px;
+    margin: 30px 0;
+    background: url(https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_banner_coupon.png) no-repeat center center;
+    background-size: 335px 140px;
+    cursor: pointer;
+}
+.banner__wrap .banner section article{
+    padding: 20px 37px 16px 18px;
+}
+.banner__wrap .banner section article h4{
+    margin-bottom: 5px;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+.banner__wrap .banner section article p{
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 12px;
+    font-weight: 400; 
+}
+.banner__wrap .banner section article h2{
+    line-height: normal;
+    letter-spacing: -0.48px;
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+}
+.banner__wrap .banner section article h2 span{
+    line-height: normal;
+    letter-spacing: -0.24px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+.banner__wrap .banner .texts{
+    width: auto;
+    height: auto;
+    margin: 0;
+    background: none;
+    cursor: default;
+}
+.banner__wrap .banner .texts p{
+    text-align: center;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* layout: MD_추천 컨텐츠 영역 */
+.content__wrap{
+    padding: 50px 0;
+    background: #fff;
+}
+.content__wrap .content section article .texts{
+    margin-left: 15px;
+}
+.content__wrap .content section article .texts h2{
+    margin-bottom: 5px;
+    line-height: 36px; 
+    letter-spacing: -0.28px;
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+}
+.content__wrap .content section article .texts h4{
+    line-height: 24px; 
+    letter-spacing: -0.16px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.content__wrap .content section article .image{
+    padding: 30px 0;
+}
+.content__wrap .content .content__products{
+    height: fit-content;
+    margin-left: 15px;
+}
+.content__wrap .content .content__products .swiper{
+    position: relative;
+    overflow: hidden;
+}
+.content__wrap .content .content__products .swiper-slide{
+    position: relative;
+}
+.content__wrap .content .content__products .swiper-slide .image{
+    padding: 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+.content__wrap .content .content__products .swiper-slide .texts{
+    margin-top: 10px;
+}
+.content__wrap .content .content__products .swiper-slide a{
+    display: block;
+    position: relative;
+    margin-top: 7px;
+    line-height: normal;
+    letter-spacing: -0.12px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+}
+.content__wrap .content .content__products .swiper-slide a::after{
+    display: inline-block;
+    position: absolute;
+    top: 16.7%;
+    width: 6px;
+    height: 9px;
+    margin-left: 10px;
+    background-image: url("https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_keyboard_arrow_right.png");
+    background-size: 6px 9px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.content__wrap .content .content__products .swiper .swiper-slide .texts h3{
+    line-height: normal;
+    letter-spacing: -0.12px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.content__wrap.content__wrap--02{
+    background: #F0F0F0;
+}
+.content__wrap.content__wrap--02 .content__products .swiper-slide .image{
+    background: #FFF;
+}
+</style>
+
+<div class="evt__wrap">
+    <div class="key-visual__wrap">
+        <div class="key-visual__texts">
+            <div class="key-visual__labels">
+                <span>MUST HAVE ITEM</span>
+                <p>11.01 -  11.15</p>
+            </div>
+            <h2> 겨울맞이 기념 <br> 아우터 특가 </h2>
+            <h4> 20% 아우터 쿠폰 선착순 증정 </h4> 
+        </div>
+        <div class="key-visual">
+            <div class="key-visual__image">
+                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_main_visual.png" alt="MD추천 메인 이미지">
+            </div>
+        </div>
+    </div>
+
+    <div class="banner__wrap">
+        <div class="banner">
+            <header>
+                <h2> 아우터 할인 쿠폰 </h2>
+                <h4> 최대 8천원 선착순 할인 </h4>
+            </header>
+            <section>
+                <article>
+                    <h4> 아우터 할인 쿠폰 </h4>
+                    <p> 7만원 이상 구매 시 최대 8천원 <br> 발급 당일 23:59까지 사용 가능 </p>
+                    <h2> 10<span>%</span></h2>
+                </article>
+            </section>
+            <div class="texts">
+                <p>· 여권정보 미등록 시 다운로드 및 사용 불가</p>
+                <p>· 일부 브랜드 및 상품 사용 불가</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content__wrap content__wrap--01">
+        <div class="content content--01">
+            <section>
+                <article>
+                    <div class="texts">
+                        <h2> 폴로 랄프로렌 </h2>
+                        <h4> 폴로 랄프로렌 자켓 </h4>
+                    </div>
+                    <div class="image">
+                        <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_main_sub_visual01.png" alt="MD추천 상품 메인 이미지1">
+                    </div>
+                </article>
+            </section>
+            <div class="content__products"> 
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content__wrap content__wrap--02">
+        <div class="content content--02">
+            <section>
+                <article>
+                    <div class="texts">
+                        <h2> 몽클레어 </h2>
+                        <h4> 폴로 랄프로렌 자켓 </h4>
+                    </div>
+                    <div class="image">
+                        <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_main_sub_visual02.png" alt="MD추천 상품 메인 이미지2">
+                    </div>
+                </article>
+            </section>
+            <div class="content__products"> 
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content__wrap content__wrap--03">
+        <div class="content content--03">
+            <section>
+                <article>
+                    <div class="texts">
+                        <h2> 마리떼 프랑소와 저버 </h2>
+                        <h4> 폴로 랄프로렌 자켓 </h4>
+                    </div>
+                    <div class="image">
+                        <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_main_sub_visual03.png" alt="MD추천 상품 메인 이미지2">
+                    </div>
+                </article>
+            </section>
+            <div class="content__products"> 
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/11/24_md_recommendation/mo_product.png" alt="노르딕 그레이 가디건">
+                            </div>
+                            <div class="texts">
+                                <h3>노르딕 그레이 가디건</h3>
+                            </div>
+                            <a href="">SHOP</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // MD_추천 컨텐츠 content__wrap--01
+    var bestSwiper = new Swiper('.content__wrap--01 .swiper', {
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: '.content__wrap--01 .pagination-fraction',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.content__wrap--01 .swiper-button-next',
+            prevEl: '.content__wrap--01 .swiper-button-prev',
+        },
+    });
+
+    // MD_추천 컨텐츠 content__wrap--02
+    var bestSwiper = new Swiper('.content__wrap--02 .swiper', {
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: '.content__wrap--02 .pagination-fraction',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.content__wrap--02 .swiper-button-next',
+            prevEl: '.content__wrap--02 .swiper-button-prev',
+        },
+    });
+
+    // MD_추천 컨텐츠 content__wrap--03
+    var bestSwiper = new Swiper('.content__wrap--03 .swiper', {
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: '.content__wrap--03 .pagination-fraction',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.content__wrap--03 .swiper-button-next',
+            prevEl: '.content__wrap--03 .swiper-button-prev',
+        },
+    });
+</script>
+</div>
+<!-- E : BO 등록 영역 -->
+
+<script src="../hyundai/include/mo_footer.js"></script>

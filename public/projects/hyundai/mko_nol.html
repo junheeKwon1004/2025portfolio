@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>현대면세점</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="https://cdn.hddfs.com/front/js/M_KO/jquery-1.12.4.min.js?ver=395"></script>
+    <script src="https://cdn.hddfs.com/front/js/M_KO/jquery-ui.js?ver=395"></script>
+    <!-- <script src="../../../hddf-frontoffice-mo/src/main/webapp/js/M_KO/jquery.bxslider.js"></script> -->
+    <script src="https://cdn.hddfs.com/front/js/M_KO/swiper.min.js?ver=395"></script>
+    <script src="https://cdn.hddfs.com/front/js/M_KO/common.ui.js?ver=395"></script>
+    <link rel="shortcut icon" href="https://cdn.hddfs.com/front/images/KO/common/favicon_H.ico">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/jquery-ui.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/swiper.min.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/common.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/layout.css?ver=395">
+</head>
+<body>
+    <!-- S : header -->
+    <script src="../hyundai/include/mo_header.js"></script>
+    <!-- E : header -->
+    <!-- S : container -->
+    <div class="container new_type">
+        <div class="gnbev_view">
+            <div class="contents_area no_space">
+                <div class="btn_share_wrap">
+                    <div class="btn_share_area">
+                        <a href="javascript:void(0);" class="btn_ev_share sharePopup"></a>
+                        <a href="javascript:mergeMyEvnt('0003167');" class="btn_ev_like"></a>
+                    </div>
+                </div>
+                <div class="ev_editarea">
+                    <!-- S : 소스복사 -->
+                    <style>
+                        .copyBtn { width: 140px; height: 40px; align-content: center; font-size: 14px; font-weight: 600; border-radius: 100px; box-shadow: 0 4px 12px rgba(240, 60, 25, 0.4); background: linear-gradient(135deg, #f03c19, #ff7253); color: #fff; position: fixed; top: 10px; right: 0; z-index: 999; }
+                    </style>
+                    <script>
+                    function copySection(id = "targetSection") {
+                        const el = document.getElementById(id);
+                        if (!el) return alert("복사할 영역을 찾지 못했습니다.");
+                        const data = el.innerHTML;
+                        if (navigator.clipboard?.writeText) {
+                            navigator.clipboard.writeText(data)
+                                .then(() => alert("소스 복사 완료!\nCtrl+V로 붙여넣기 하세요."))
+                                .catch(() => fallbackCopy(data));
+                        } else {
+                            fallbackCopy(data);
+                        }
+                    }
+                    function fallbackCopy(text) {
+                        const ta = document.createElement("textarea");
+                        ta.value = text; ta.style.position = "fixed"; ta.style.top = "-9999px";
+                        document.body.appendChild(ta); ta.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(ta);
+                        alert("소스 복사 완료!\nCtrl+V로 붙여넣기 하세요.");
+                    }
+                    </script>
+                    <button class="copyBtn" onclick="copySection()">소스 복사하기</button>
+                    <!-- E : 소스복사 --> 
+<!-- S : BO 등록 영역 : 이벤트ID(0007031) / 블랙등급업ID(0007031) / H.oneyID(0007034) -->
+<script src="../../common/js/common.js" type="module"></script>
+<div id="targetSection">
+<style type="text/css">
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+.font_rbt {font-family:"Roboto", serif; font-weight:400; font-style: normal;}
+
+/* reset */
+.location, .event_top_share, .event_detail_btn {display:none;}
+.contents_area {border-bottom:none;}
+#content {width:100%;}
+[data-tab] {display:block;}
+.btn_box.type2.btn_area {display:none;}
+
+/* layout :  키 비주얼 영역 */
+.key-visual__wrap{width: 100%;position: relative;}
+.key-visual__texts{width: 100%;position: absolute;top: 60px;left: 50%;transform: translateX(-50%);text-align: center;}
+.ev_editarea .key-visual__texts img{margin-bottom: 28px;width: 160px!important;}
+.key-visual__texts h2{color: #000;	font-size: 32px;font-weight: 700;letter-spacing: -1.6px;line-height: 45px;}
+.key-visual__texts h4{color: #000;	font-size: 32px;font-weight: 500;letter-spacing: -1.6px;}
+
+/* layout : 요약 영역 */
+.summary__wrap {background:#272727; padding:8.80vw 10.67vw;}
+.summary__wrap li {display:flex; font-size:3.47vw; position:relative; color:#fff;font-weight: 500;line-height: 5.07vw; /* 146.154% */
+letter-spacing: -0.65px;}
+.summary__wrap li + li {margin-top:15px; }
+.summary__wrap li strong {width:25%; font-weight:700; display:block; color:#d5d5d5; line-height: 5.07vw; /* 146.154% */
+letter-spacing: -0.03vw;}
+
+/* layout : 컨텐츠 영역 */
+.content__wrap {width:100%; padding: 17.5vw 6.93vw;}
+.content__wrap header{text-align: center;}
+.content__wrap header span {font-size:3.84vw; font-weight:500; line-height:4.38vw; letter-spacing:normal; color:#3549FF;}
+.content__wrap header h3 {margin-top:5.5vw; font-size:7.95vw; line-height:1.4em; letter-spacing:-0.05em; font-weight:700; color:#1b1e23;}
+.content__wrap.content__wrap--02{padding: 0px 6.93vw 17.5vw;}
+.content__wrap.content__wrap--03 {background:#f9f9f9;}
+
+/* layout : 컨텐츠 영역 - 카드형 */
+.content__wrap .level__list {margin-top:7vw;}
+.content__wrap .level__list > ul {overflow:hidden;}
+.content__wrap .level__list > ul > li {position:relative; display:flex; align-items:center; padding:6.40vw 0; border:1px solid #b0b0b0; border-radius:8px; background:#fff;}
+.content__wrap .level__list > ul > li + li {border-top: none;}
+.content__wrap .level__list > ul > li::before,
+.content__wrap .level__list > ul > li::after {content:""; position:absolute; top:50%; margin-top:-2vw; width:3.73vw; height:7vw; background:#fff; border:1px solid #b0b0b0; z-index:2;}
+.content__wrap .level__list > ul > li::before {left:0; margin-left:-1vw; border-radius:0 3.73vw 3.73vw 0; border-width:1px 1px 1px 0;}
+.content__wrap .level__list > ul > li::after {right:0; margin-right:-1vw; border-radius:3.73vw 0 0 3.73vw; border-width:1px 0 1px 1px;}
+.content__wrap .level__list .card__title {display:flex; flex-wrap:wrap; flex-direction:column; justify-content:center; align-items:center; flex-shrink:0; width:37vw;gap: 1vw;}
+.content__wrap .level__list .card__title .tit {display:inline-block; position:relative; margin-top:1vw; font-size:6.67vw; letter-spacing:-0.06em; font-weight:700; color:#1b1e23; text-align:center; word-break:break-word; line-height:1;}
+.content__wrap .level__list .card__title .tit .font_rbt {font-size:7.53vw; font-weight:800; vertical-align:top;}
+.content__wrap .level__list .card__title .tit .ico__max {display:block; width:7.47vw; height:4.27vw; margin-right:1.07vw;  background:url("https://cdn.hddfs.com/files/editor/20230102/4f04cc4d_202301020856387320.png") no-repeat; background-size:7.47vw auto;  text-indent:-9999em; overflow:hidden;} /* 최대 */
+.content__wrap .level__list .card__desc {display:flex; flex-wrap:wrap; flex-direction:column; justify-content: flex-start; gap: 4vw; min-height:25vw;padding: 1vw 2vw 0;font-size:3.73vw; font-weight:500; letter-spacing:-0.03em; color:#494949;line-height:4.27vw;}
+.content__wrap .level__list .card__desc::before {content:""; position:absolute; top:50%; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); transform:translateY(-50%); left:calc(37vw - 1px); width:1px; height:calc(100% - 12vw); background:#b0b0b0;}
+.content__wrap .level__list .card__desc ul > li {position:relative; padding-left:1.37vw; font-size:3.30vw; font-weight:500; letter-spacing:-0.05em; color:#656565; word-break:break-word;}
+.content__wrap .level__list .card__desc ul > li::before {content:""; position:absolute; top:1.87vw; left:0; width:0.53vw; height:0.53vw; background-color:#656565; border-radius:50%;}
+.content__wrap .level__list .card__desc ul > li + li {margin-top:0.80vw;}
+.content__wrap .level__list .card__desc ul > li.flex {display:flex; gap:0.80vw;}
+.content__wrap .level__list .card__desc ul > li.flex em:nth-of-type(1) {flex-shrink:0;}
+
+.content__wrap.content__wrap--02 .level__list .card__title {gap: 3vw;}
+.content__wrap.content__wrap--02 .level__list .card__title .tit::after{content:""; position:absolute; bottom:0; left: 0;width: 100%;height: 1.87vw;background-color: #EAE8FF;z-index: -1;}
+.content__wrap.content__wrap--02 .level__list .card__desc::before {left: calc(37vw - 10px);}
+.content__wrap.content__wrap--02 .level__list .card__desc{padding: 1vw 4vw 0;}
+
+/* component : 버튼 */
+.content__wrap .btn__wrap {margin-top:7vw;}
+.content__wrap .btn__wrap a {display:block; width:77.81vw; line-height:16.44vw; margin:0 auto; font-size:4.11vw; font-weight:700; letter-spacing:-0.05em; color:#fff; background-color: #ffffff; border: 1px solid #1B1E23; color:#1B1E23; border-radius:4px;}
+.content__wrap .btn__wrap a span {display: flex; justify-content: center; align-items: center;}
+.content__wrap .btn__wrap a span::after {content:""; display: inline-block; margin-left: 4px;}
+.content__wrap .btn__wrap .btn-down {color: #ffffff; background-color: #1B1E23;}
+.content__wrap .btn__wrap .btn-down span::after {background:url("https://cdn.hddfs.com/files/op/20250121/2b0444ab_202501211805124290.png") center center/100% 100% no-repeat;width: 4.80vw;height: 4.80vw;}
+.content__wrap .btn__wrap .btn-arrow span::after {background:url("https://cdn.hddfs.com/files/op/20241218/ebf02e5b_202412181454423400.png") center center/100% 100% no-repeat;width: 4.80vw;height: 4.80vw;}
+
+/* component : 멤버십 아이콘 */
+.content__wrap .ico__level {display:inline-block; width:8.00vw; height:8.00vw; background:url("https://cdn.hddfs.com/files/op/20241219/204bd8a2_202412191713044740.png") no-repeat; background-size:50.93vw auto; text-indent:-9999em; overflow:hidden; vertical-align:top;}
+.content__wrap .ico__level.ico-gold {background-position:0 0;}
+.content__wrap .ico__level.ico-honey  {background-position:0 -17.07vw;}
+</style>
+<!-- layout :  키 비주얼 영역 -->
+<div class="key-visual__wrap">
+	<div class="key-visual">
+		<img class="key-visual__image" alt="NOL 회원 대상 현대면세점 혜택 증정" src="https://image.hddfs.com/front-pub/event/2025/12/22_nol_universe/mo_nol_kv.png" />
+	</div>
+</div>
+
+<!-- layout : 요약 영역  -->
+<div class="summary__wrap">
+	<ul class="summary__list">
+		<li><strong>혜택 대상</strong>NOL 회원</li>
+		<li><strong>참여방법</strong>면세점 온/오프라인 혜택</li>
+	</ul>
+</div>
+
+<!-- layout : 컨텐츠 영역 - 등급 업그레이드 -->
+<div class="content__wrap content__wrap--01">
+	<header>
+		<span class="font_rbt">BENEFIT 1</span>
+		<h3>멤버십 등급 업그레이드</h3>
+	</header>
+	<section class="level__list">
+		<ul>
+			<li data-aos="fade-up">
+				<div class="card__title">
+					<p class="ico__wrap" data-aos="flip-left" data-aos-delay="150">
+						<span class="ico__level ico-gold">GOLD</span>
+					</p>
+					<p class="tit">
+						<span class="ico__max">최대</span>
+						<em class="font_rbt">15%</em>
+					</p>
+				</div>
+				<div class="card__desc">
+					<p >멤버십 GOLD 등급</p>
+					<ul>
+						<li>온/오프라인 최대 15% 할인</li>
+						<li>유효기간 : 지급 당해년도 말일</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<div class="btn__wrap">
+		<a href="javascript:evtInputCode('0007031','','lvup')" class="btn-down"><span>등급 업그레이드</span></a>
+	</div>
+</div>
+
+<!-- layout : 컨텐츠 영역 - 허니 다운로드 -->
+<div class="content__wrap content__wrap--02">
+	<header>
+		<span class="font_rbt">BENEFIT 2</span>
+		<h3>무역센터점, 온라인몰<br>
+			온·오프라인 통합<br> H.oney 3종</h3>
+	</header>
+	<section class="level__list">
+		<ul>
+			<li data-aos="fade-up" data-aos-delay="0">
+				<div class="card__title">
+					<p class="ico__wrap" data-aos="flip-left" data-aos-delay="350"><span class="ico__level ico-honey">H.oney</span></p>
+					<p class="tit"><em class="font_rbt">1</em>만 <em class="font_rbt">1</em>천원</p>
+				</div>
+				<div class="card__desc">
+					<p>온·오프라인용 H.oney</p>
+					<ul>
+						<li>$100 이상 구매시 사용 가능</li>
+						<li>ID당 월 1회 참여 가능</li>
+						<li>유효기간 : 발급일로부터 30일</li>
+					</ul>
+				</div>
+			</li>
+			<li data-aos="fade-up" data-aos-delay="200">
+				<div class="card__title">
+					<p class="ico__wrap" data-aos="flip-left" data-aos-delay="350"><span class="ico__level ico-honey">H.oney</span></p>
+					<p class="tit"><em class="font_rbt">3</em>만 <em class="font_rbt">3</em>천원</p>
+				</div>
+				<div class="card__desc">
+					<p>온·오프라인용 H.oney</p>
+					<ul>
+						<li>$300 이상 구매시 사용 가능</li>
+						<li>ID당 월 1회 참여 가능</li>
+						<li>유효기간 : 발급일로부터 30일</li>
+					</ul>
+				</div>
+			</li>
+			<li data-aos="fade-up" data-aos-delay="400">
+				<div class="card__title">
+					<p class="ico__wrap" data-aos="flip-left" data-aos-delay="550"><span class="ico__level ico-honey">H.oney</span></p>
+					<p class="tit"><em class="font_rbt">5</em>만 <em class="font_rbt">5</em>천원</p>
+				</div>
+				<div class="card__desc">
+					<p>온·오프라인용 H.oney</p>
+					<ul>
+						<li>$500 이상 구매시 사용 가능</li>
+						<li>ID당 월 1회 참여 가능</li>
+						<li>유효기간 : 발급일로부터 30일</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<div class="btn__wrap">
+		<a href="javascript:evtInputCode('0007034','','honey')" class="btn-down"><span>H.oney 혜택받기</span></a>
+	</div>
+</div>
+
+<!-- layout : 컨텐츠 영역 - 인천공항점 링크이동 -->
+<div class="content__wrap content__wrap--03">
+	<header>
+		<span class="font_rbt ">BENEFIT 3</span>
+		<h3>인천공항점 전용<br> 할인쿠폰 4종</h3>
+	</header>
+	<div class="btn__wrap">
+		<a href="https://m.hddfs.com/event/op/evnt/evntDetail.do?evntId=0007042" class="btn-arrow"><span>할인쿠폰 받으러 바로가기</span></a>
+	</div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.hddfs.com/front/css/M_KO/aos.css"><!-- aos -->
+<script type="text/javascript" src="https://cdn.hddfs.com/front/js/M_KO/aos.js"></script><!-- aos -->
+<script type="text/javascript">
+	/*** S : 이벤트 관련 스크립트 통합 ***/
+	/* S : 혜택코드 입력 */
+	function evtInputCode(evntId,inputDiv,evtType){
+		// 로그인체크
+		if(!isLogin){ alert("로그인 후 이용해주세요."); login(); return; }
+
+		let _eventText = ""; //혜택 코드
+
+		return !inputDiv ? _falseInputDiv() : _trueInputDiv();
+		//혜택코드 없을 때
+		function _falseInputDiv() {
+			return evtType == 'lvup' ? evtCustomLvup(evntId)
+			: evtType == 'hcard' ? evtCustomHcard(evntId)
+			: evtType == 'honey' ? evtCustomHoney(evntId)
+			: addEvnt(evntId)
+		}
+		//혜택코드 있을 때
+		function _trueInputDiv() {
+			let inputBase = document.getElementById(inputDiv);
+			let inputText = inputBase.value.replace(/(\s*)/g,"").toUpperCase();
+			(_eventText == inputText) ? evtType == 'lvup' ? evtCustomLvup(evntId)
+			: evtType == 'hcard' ? evtCustomHcard(evntId)
+			: evtType == 'honey' ? evtCustomHoney(evntId)
+			: addEvnt(evntId)
+			: alert("입력하신 혜택 코드가 정확하지 않습니다.\n확인 후 다시 입력해주세요.");
+		}
+	}
+	/* E : 혜택코드 입력 */
+
+	/* S : 등급업 로직(온/오프통합) */
+	function evtCustomLvup(evntId) {
+		$.ajax({
+			async: false,
+			url: ctx_curr + "/op/evnt/evntJoinValidation.json",
+			dataType: "json",
+			type: "POST",
+			data: {
+			evntId: evntId
+			},
+			success: function(data, textStatus, jqXHR) {
+			if (!crew.ajaxValidate(data)) {
+				return;
+			}
+			$.ajax({
+				async: false,
+				url: ctx_curr + "/op/evnt/evntJoin.json",
+				dataType: "json",
+				type: "POST",
+				data: {
+				evntId: evntId
+				},
+				success: function(data, textStatus, jqXHR) {
+				if (!crew.ajaxValidate(data)) {
+					return;
+				}
+
+				// 이벤트 참여 결과 내용 구성
+				var winInfo = [];
+				var evntWinClsCd = data.info.evntWinClsCd;
+				var bnfListWinResult = data.info.bnfListWinResult;
+
+				// 상세항목 구성
+				if (bnfListWinResult.length != 0) {
+					alert("등급이 업그레이드 되었습니다. 마이현대에서 확인하세요.");
+				}
+				},
+				error: function(jqXHR, textStatus, errorThrown) {}
+			});
+			},
+			error: function(jqXHR, textStatus, errorThrown) {}
+		});
+	}
+	/* E : 등급업 로직(온/오프통합) */
+
+	/* S : H선불카드 지급 로직 */
+	// 1.이벤트 검증
+	function evtCustomHcard(evntId) {
+		// 기본값 설정
+		var bnfSeq = typeof (bnfSeq) == "undefined" ? 0 : bnfSeq;
+		// 전송
+		$.ajax({
+			async: false,
+			url: ctx_curr + "/op/evnt/evntJoinValidation.json",
+			dataType: "json",
+			type: "POST",
+			data: { evntId: evntId, bnfSeq: bnfSeq },
+			success: function (data, textStatus, jqXHR) {
+			if (!crew.ajaxValidate(data)) { return; }
+			getSptmCardTr(evntId);
+			},
+			error: function (jqXHR, textStatus, errorThrown) {
+			//console.log(jqXHR.status);
+			}
+		});
+	}
+	// 2.오프라인 선불카드 지급 로직
+	function getSptmCardTr(evntId) {
+		$.ajax({
+			async: false,
+			url: ctx_curr + "/op/evnt/getSptmCardTr.json",     //선불카드 지급 함수 내에서 여권 정보 확인
+			dataType: "json",
+			type: "POST",
+			data: { evntId: evntId },
+			success: function (data, textStatus, jqXHR) {
+
+			if (!crew.ajaxValidate(data)) { return; }
+			var vResultCode = data.resultCode;
+			var vMessage = data.message;
+
+			if (vResultCode == '1') {
+				alert('H선불카드 지급이 완료 되었습니다.\n마이현대에서 지급 받은 혜택을 확인 바랍니다.');    //얼럿 삭제 및 응용 가능
+				evntJoinAdd(evntId);
+			}
+			else {
+				if(vMessage == "여권정보가 있는 고객만 참여가능합니다.") {
+				alert('여권정보 입력 시에만 지급 가능합니다.');
+				}
+				else {
+				alert(vMessage);
+				}
+				//alert('여권번호 미등록 상태에서 참여 시,\n선불카드 지급 및 기간 내 재참여 불가하실 수 있습니다.\n여권번호 등록 후 재참여 원하실 시 고객센터(1811-6688)로 연락바랍니다.');
+			}
+		},
+		error: function (jqXHR, textStatus, errorThrown) {
+			//console.log(jqXHR.status);
+			alert('처리중 오류가 발생했습니다.');
+			}
+		});
+	}
+	// 3.이벤트 참여 처리
+	function evntJoinAdd(evntId, bnfSeq, fn) {
+		$.ajax({
+			async: false,
+			url: ctx_curr + "/op/evnt/evntJoin.json",
+			dataType: "json",
+			type: "POST",
+			data: { evntId: evntId, bnfSeq: bnfSeq },
+			success: function (data, textStatus, jqXHR) {
+			if (!crew.ajaxValidate(data)) { return; }
+			},
+			error: function (jqXHR, textStatus, errorThrown) {
+			//console.log(jqXHR.status);
+			}
+		});
+	}
+	/* E : H선불카드 지급 로직 */
+
+	/* S : H.ONEY 지급 로직 */
+	// 1) H.ONEY 다운로드
+	function getPrepCardPrevDc(evntId){
+		// 로그인체크
+		if(!isLogin){ alert("로그인 후 이용해주세요."); login(); return; }
+
+		// 전송
+		$.ajax({
+			async : false,
+			url : ctx_curr + "/op/evnt/getPrepCardPrevDc.json", //선불카드 지급 함수 내에서 여권 정보 확인
+			dataType : "json",
+			type : "POST",
+			data : { evntId : evntId },
+			success : function(data, textStatus, jqXHR){
+			//console.log("vMessage: "+data);
+
+			//if(!crew.ajaxValidate(data)){ return; }
+			var vResultCode = data.resultCode;
+			var vMessage = data.message;
+			if(vResultCode == '1'){
+				alert('H.oney 가 정상적으로 지급 되었습니다.'); //얼럿 삭제 및 응용 가능	
+			}
+
+			else{
+				alert('참여 대상이 아닙니다.');
+			}
+			},
+			error : function(jqXHR, textStatus, errorThrown){
+			//console.log(jqXHR.status);
+			alert('처리중 오류가 발생했습니다.');
+			}
+		});
+	}
+	// 2) 이벤트 검증 및 참여 처리
+	function evtCustomHoney(evntId){
+		// 로그인체크
+		if(!isLogin){ alert("로그인 후 이용해주세요."); login(); return; }
+
+		// 참여 조건 추가 가능
+		// 기본값 설정
+		var bnfSeq = typeof(bnfSeq) == "undefined" ? 0 : bnfSeq;
+		// 전송
+		$.ajax({
+			async : false,
+			url : ctx_curr + "/op/evnt/evntJoinValidation.json",
+			dataType : "json",
+			type : "POST",
+			data : { evntId : evntId},
+			success : function(data, textStatus, jqXHR){
+			if(!crew.ajaxValidate(data)){ return; }
+			$.ajax({
+				async : false,
+				url : ctx_curr + "/op/evnt/evntJoin.json",
+				dataType : "json",
+				type : "POST",
+				data : { evntId : evntId, bnfSeq : bnfSeq },
+				success : function(data, textStatus, jqXHR){
+					if(!crew.ajaxValidate(data)){ return; }
+					getPrepCardPrevDc(evntId);
+				},
+				error : function(jqXHR, textStatus, errorThrown){
+					//console.log(jqXHR.status);
+				}
+			});
+		},
+		error : function(jqXHR, textStatus, errorThrown){
+			//console.log(jqXHR.status);
+		}
+	});
+	}
+	/* E : H.ONEY 지급 로직 */
+	/*** E : 이벤트 관련 스크립트 통합 ***/
+	$(window).load(function(){
+		AOS.init({
+			easing: 'ease-out'
+		});
+	});
+</script>
+</div>
+<!-- E : BO 등록 영역 -->
+                </div><!--//ev_editarea-->
+                <div class="attention_area pdb_no">
+                    <p class="attention_tit">유의사항</p>
+                    <ul class="dot_list_new">
+                        <li>내용</li>
+                    </ul>
+                </div>
+            </div><!--//contents_area-->
+        </div><!--//gnbev_view-->
+    </div>
+    <!-- E : container -->
+    <!-- S : footer -->
+    <script src="../hyundai/include/mo_footer.js"></script>
+    <!-- E : footer -->
+    <div class="gnb_dimmed"></div>
+</body>
+</html>

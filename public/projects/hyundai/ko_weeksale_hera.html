@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>현대면세점</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.hddfs.com/front/js/KO/jquery-1.12.4.min.js?ver=394"></script>
+    <script src="https://cdn.hddfs.com/front/js/KO/jquery-ui.js?ver=394"></script>
+    <!-- <script src="../../../hddf-frontoffice/src/main/webapp/js/KO/jquery.bxslider.js"></script> -->
+    <script type="text/javascript" src="//static.groobee.io/dist/g2/js/custom-swiper-bundle.min.js"></script>
+    <script src="https://cdn.hddfs.com/front/js/KO/common.ui.js?ver=394"></script>
+    <!-- <script src="../../../hddf-frontoffice/src/main/webapp/js/KO/product.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/KO/jquery-ui.css?ver=394">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/KO/swiper-bundle.min.9.4.1.css?ver=394">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/KO/common.css?ver=394">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/KO/layout.css?ver=394">
+    <!-- <link rel="stylesheet" href="../../../hddf-frontoffice/src/main/webapp/css/KO/product.css"> -->
+</head>
+<body>
+<div id="wrap">
+    <!-- S : header -->
+    <script src="../hyundai/include/header.js"></script>
+    <link rel="stylesheet" href="../hyundai/include/swiper.css">
+    <script type="text/javascript" src="../hyundai/include/swiper.js"></script>
+    <!-- E : header -->
+    <!-- S : container -->
+    <main id="container" class="container">
+        <!-- S : location -->
+        <article class="location">
+            <section class="box">
+                <a href="https://www.hddfs.com/shop/dm/main.do" class="home">홈</a> 
+                <div><a href="javascript:" class="no-link">이벤트</a></div>
+            </section>
+        </article>
+        <!-- E : location -->
+        <article id="content">
+            <section class="event">
+                <div class="event_top_share">
+                    <a noHref class="ico_com round_favorite" onclick="mergeMyEvnt('0003167', this)">관심이벤트</a>
+                    <a noHref class="ico_com round_blog shareNaver">네이버블로그</a>
+                    <a noHref class="ico_com round_facebook shareFacebook">페이스북</a>
+                    <a noHref class="ico_com round_kakao shareKakao">카카오스토리</a>
+                </div>
+                <div class="benefit_img">
+                    <!-- S : 소스복사 -->
+                    <style>
+                        .copyBtn { width: 250px; height: 50px; align-content: center; font-size: 18px; font-weight: 600; transition: all 0.3s ease;border-radius: 100px;cursor: pointer; box-shadow: 0 4px 12px rgba(240, 60, 25, 0.4); background: linear-gradient(135deg, #f03c19, #ff7253); color: #fff; position: fixed; top: 120px; right: 5px; z-index: 999; }
+                        .copyBtn:hover {transform: translateY(-5px);box-shadow: 0 6px 16px rgba(240, 60, 25, 0.6);}
+                    </style>
+                    <script>
+                    function copySection(id = "targetSection") {
+                        const el = document.getElementById(id);
+                        if (!el) return alert("복사할 영역을 찾지 못했습니다.");
+                        const data = el.innerHTML;
+
+                        if (navigator.clipboard?.writeText) {
+                            navigator.clipboard.writeText(data)
+                            .then(() => alert("소스 복사 완료!\nCtrl+V로 붙여넣기 하세요."))
+                            .catch(() => fallbackCopy(data));
+                        } else {
+                            fallbackCopy(data);
+                        }
+                    }
+
+                    function fallbackCopy(text) {
+                        const ta = document.createElement("textarea");
+                        ta.value = text; ta.style.position = "fixed"; ta.style.top = "-9999px";
+                        document.body.appendChild(ta); ta.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(ta);
+                        alert("소스 복사 완료!\nCtrl+V로 붙여넣기 하세요.");
+                    }
+                    </script>
+                    <button type="button" class="copyBtn" onclick="copySection()">소스 복사하기</button>
+                    <!-- E : 소스복사 -->
+<!-- S : BO 등록 영역 / TYPE : 운영 -->
+<div id="targetSection">
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+#content {width:100%;}
+.event_detail_btn, .event_detail_con, .event_reserves_new, .event_random_reserves {display:none;}
+.attention_area, .benefit_content, .tab-action, .spexGoosListArea, .evntGoosListArea {width:1080px; margin:0 auto;}
+.attention_area, .benefit_content {margin-top:60px;}
+.location_all {width:1356px; padding:0;}
+.location_all .location {margin:0; padding:15px 0;}
+.event_top_share {position:absolute; top:10px; right:0; left:0; width:1356px; margin:0 auto;}
+.evt__wrap {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Pretendard Variable", Pretendard, 'Noto Sans CJK KR', '본고딕', 'sans-serif', sans-serif;
+    overflow: hidden;
+}
+.evt__wrap .key-visual__wrap{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.evt__wrap .key-visual__wrap .key-visual__simbol{
+    position: absolute;
+    top: 0px;
+    right: 66px;
+}
+.evt__wrap .key-visual__wrap .key-visual .key-visual__image{
+    display: block;
+    width: 100%;
+}
+.evt__wrap .key-visual__wrap .key-visual__texts{
+    position: relative;
+    padding: 64px 0;
+    background: #343536;
+    color: #fff;
+}
+.evt__wrap .key-visual__wrap .key-visual__texts .key-visual__texts-inner{
+    display: flex;
+    width: 1356px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.evt__wrap .key-visual__wrap .key-visual__texts .key-visual__texts-inner .key-visual__title h2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: -2.5px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.evt__wrap .key-visual__wrap .key-visual__texts .key-visual__texts-inner .key-visual__title h4{
+    margin-top: 15px;
+    letter-spacing: -1px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.evt__wrap .key-visual__wrap .key-visual__texts .key-visual__texts-inner a.key-visual__link{
+    display: flex;
+    min-width: 320px;
+    padding: 30px 65px;
+    border: 1px solid #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    letter-spacing: -0.5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 700;
+}
+.evt__wrap .content__wrap{
+    padding: 100px 0;
+    background: #F8F8F7;
+}
+.evt__wrap .content__wrap .content{
+    width: 1356px;
+    margin: 0 auto;
+}
+.evt__wrap .content__wrap .content header{
+    margin-bottom: 64px;
+    text-align: center;
+} 
+.evt__wrap .content__wrap .content header h4{
+    margin-bottom: 5px;
+    color: #343536;
+    font-size: 16px;
+    font-weight: 600;
+}
+.evt__wrap .content__wrap .content header h2{
+    letter-spacing: -1.5px;
+    color: #1B1E23;
+    font-size: 52px;
+    font-weight: 700;
+}
+.evt__wrap .content__wrap .content header span{
+    display: inline-block;
+    margin-top: 10px;
+    letter-spacing: -1.5px;
+    color: #1B1E23;
+    font-size: 20px;
+}
+.evt__wrap .content__wrap .content section{
+    position: relative;
+}
+.evt__wrap .content__wrap .content section .swiper{
+    position: relative;
+    overflow: hidden;
+}
+.evt__wrap .content__wrap .content section .swiper-slide{
+    position: relative;
+}
+.evt__wrap .content__wrap .content section .swiper-slide a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+.evt__wrap .content__wrap .content section .swiper .swiper-slide .texts h3{
+    margin: 15px 0 0 15px;
+    text-align: left;
+    line-height: 25px; /* 138.889% */
+    color: #1B1E23;
+    font-size: 18px;
+}
+.evt__wrap .content__wrap .content section .swiper .swiper-pagination-fraction{
+    margin-top: 50px;
+    text-align: center;
+    color: #696969;
+    font-size: 16px;
+}
+.evt__wrap .content__wrap .content section .swiper .swiper-pagination-current{
+    padding-right: 10px;
+    color: #000;
+    font-weight: 600;
+}
+.evt__wrap .content__wrap .content section .swiper .swiper-pagination-total{
+    padding-left: 10px;
+}
+.evt__wrap .content__wrap .content section .swiper-button-next{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    z-index: 3;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    margin-top: -70px;
+    background-image: url("https://cdn.hddfs.com/files/op/20250731/9555d8b0_202507311454275560.png");
+    background-position: right top;
+    background-size: 140px 70px;
+    background-repeat: no-repeat;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.evt__wrap .content__wrap .content section .swiper-button-prev{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    z-index: 3;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    margin-top: -70px;
+    background-image: url("https://cdn.hddfs.com/files/op/20250731/9555d8b0_202507311454275560.png");
+    background-position: left top;
+    background-size: 140px 70px;
+    background-repeat: no-repeat;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.evt__wrap .benefit__wrap{
+    background: #fff;
+}
+.evt__wrap .benefit__wrap .content header{
+    margin-bottom: 60px;
+}
+.evt__wrap .benefit__wrap .content header h4{
+    color: #343536;
+}
+.evt__wrap .benefit__wrap .content section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.evt__wrap .benefit__wrap .content section article{
+    position: relative;
+    height: 520px;
+    border: 1px solid #B0B0B0;
+    background: #FFF;
+    border-radius: 10px;
+}
+.evt__wrap .benefit__wrap .content section article .image img{
+    border-radius: 10px 10px 0 0;
+}
+.evt__wrap .benefit__wrap .content section article .badge{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1.5px;
+    background: #343536;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.evt__wrap .benefit__wrap .content section article .texts{
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 207px;
+}
+.evt__wrap .benefit__wrap .content section article .texts h3{
+    line-height: 32px; /* 128% */
+    letter-spacing: -1.5px;
+    color: #1B1E23;
+    font-size: 23px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 40px);
+    transform: translate(-50%, -50%);
+}
+.evt__wrap .benefit__wrap .content section article .texts h3 strong{
+    font-weight: 700;
+}
+.evt__wrap .benefit__wrap .content section article .texts p{
+    margin-top: 20px;
+    line-height: 23px; /* 143.75% */
+    letter-spacing: -0.32px;
+    color: #888;
+    font-size: 16px;
+    font-weight: 400;
+}
+.evt__wrap .benefit__wrap .content section.benefit__wrap--02{
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+.evt__wrap .benefit__wrap .content section.benefit__wrap--02 article{
+    display: flex;
+    height: 362px;
+    align-items: center;
+}
+.evt__wrap .benefit__wrap .content section.benefit__wrap--02 article .image img{
+    border-radius: 10px 0 0 10px;
+}
+.evt__wrap .benefit__wrap .content section.benefit__wrap--02 article .texts{
+    text-align: start;
+}
+.evt__wrap .focus__wrap{
+    background: #343536;
+}
+.evt__wrap .focus__wrap .content header h4,.evt__wrap .focus__wrap .content header h2{
+    color: #fff;
+}
+.evt__wrap .focus__wrap .content section .swiper .swiper-pagination-fraction{
+    color: #CFCFCF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.evt__wrap .focus__wrap .content section .swiper .swiper-pagination-current{
+    color: #fff;   
+}
+.evt__wrap .focus__wrap .content section .swiper-button-prev,.evt__wrap .focus__wrap .content section .swiper-button-next{
+    top: 146px;
+    margin-top: 0;
+    background-image: url("https://cdn.hddfs.com/files/op/20250731/98bf5931_202507311454385680.png");
+}
+</style>
+<!-- 주특기 -->
+<div class="evt__wrap">
+    <!-- 키 비주얼 영역 -->
+    <div class="key-visual__wrap">
+        <div class="key-visual">
+            <img class="key-visual__simbol" src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/symbol.png" alt="주특기 헤라 심볼">
+            <img class="key-visual__image" src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/kv.png" alt="헤라 키비주얼 이미지">
+        </div>
+        <div class="key-visual__texts">
+            <div class="key-visual__texts-inner">
+                <div class="key-visual__title">
+                    <h2>
+                        헤라
+                        <img src="https://cdn.hddfs.com/files/op/20250731/a1ea7df8_202507311455007340.png" alt="">
+                        현대면세점
+                    </h2>
+                    <h4>생기 넘치는 열정으로 아름다움을 표현합니다.</h4>
+                </div>
+                <a href="https://www.hddfs.com/shop/dm/bran/branSub.do?onlnBranCd=622101&goosCtgId=03340402" class="key-visual__link">
+                    헤라 바로가기
+                    <img src="https://cdn.hddfs.com/files/op/20250731/9145e6ea_202507311455411100.png" alt="브랜드관 바로가기">
+                </a> 
+            </div>
+        </div>
+    </div>
+    <!-- 베스트 영역 -->
+    <div class="content__wrap best__wrap">
+        <div class="content">
+            <header>
+                <h4>BEST ITEM</h4>
+                <h2>헤라 BEST ITEM</h2>
+            </header>
+            <section>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best01.png" alt="헤라 UV프로텍터 톤업 듀오 SPF50+PA++++">
+                            </div>
+                            <div class="texts">
+                                <h3>헤라 UV프로텍터 톤업 듀오 <br> SPF50+PA++++</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222260059301">헤라 UV프로텍터 톤업 듀오 SPF50+PA++++</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best02.png" alt="블랙 쿠션 파운데이션 디럭스 에디션 21N1 본품+리필2">
+                            </div>
+                            <div class="texts">
+                                <h3>블랙 쿠션 파운데이션 디럭스 에디션 21N1 <br> 본품1+리필2</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222260057301">블랙 쿠션 파운데이션 디럭스 에디션 21N1 본품1+리필2</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best03.png" alt="헤라 센슈얼 누드 글로스 5g 422호 란제리">
+                            </div>
+                            <div class="texts">
+                                <h3>헤라 센슈얼 누드 글로스 5g 422호 란제리</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222280050501">헤라 센슈얼 누드 글로스 5g 422호 란제리</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best04.png" alt="헤라 실키 스테이 24H롱웨어 21N1 30g">
+                            </div>
+                            <div class="texts">
+                                <h3>헤라 실키 스테이 24H롱웨어 21N1 30g</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222260052501">헤라 실키 스테이 24H롱웨어 21N1 30g</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best05.png" alt="리플렉션 스킨 글로우 파운데이션19N1 SPF15/PA++">
+                            </div>
+                            <div class="texts">
+                                <h3>리플렉션 스킨 글로우 파운데이션 <br> 19N1 SPF15/PA++</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222260061301">리플렉션 스킨 글로우 파운데이션19N1 SPF15/PA++</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best06.png" alt="헤라 센슈얼 누드 밤 3.5g 303호 포피">
+                            </div>
+                            <div class="texts">
+                                <h3>헤라 센슈얼 누드 밤 3.5g 303호 포피</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222280058301">헤라 센슈얼 누드 밤 3.5g 303호 포피</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best07.png" alt="헤라 시그니아 바이탈 리프팅 크림 60ml">
+                            </div>
+                            <div class="texts">
+                                <h3>헤라 시그니아 바이탈 리프팅 크림 60ml</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222250065701">헤라 시그니아 바이탈 리프팅 크림 60ml</a>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/best08.png" alt="헤라 리프레싱 클렌징 폼 듀오 세트">
+                            </div>
+                            <div class="texts">
+                                <h3>헤라 리프레싱 클렌징 폼 듀오 세트</h3>
+                            </div>
+                            <a href="https://www.hddfs.com/shop/gd/dtl/goos.do?onlnGoosCd=56222250066101">헤라 리프레싱 클렌징 폼 듀오 세트</a>
+                        </article>
+                    </div>
+                    <div class="pagination-fraction"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
+        </div>
+    </div>
+    <!-- 베네핏 영역 -->
+    <div class="content__wrap benefit__wrap">
+        <div class="content">
+            <header>
+                <h4>BENEFIT</h4>
+                <h2>헤라 구매 사은 혜택</h2>
+            </header>
+            <section>
+                <article>
+                    <div class="badge">
+                        사은품<br>증정
+                    </div>
+                    <div class="image">
+                        <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/benefit01-1.png" alt="헤라 구매사은품: $35 이상 구매 시 옴므 올인원 스킨 하이드로 트리트먼트 75ml or 센슈얼 누드 밤 or 헤라 옴므 블랙 액티브 2종 키트 랜덤증정">
+                    </div>
+                    <div class="texts">
+                        <h3>
+                            $35 이상 구매 시 <br>
+                            <strong>옴므 올인원 스킨 하이드로 트리트먼트 75ml <br>or 센슈얼 누드 밤<br>or 헤라 옴므 블랙 액티브 2종 키트 랜덤증정</strong>
+                        </h3>
+                    </div>
+                    <!-- <span class="fa_soldout_02 ev_btn stamp sold-out-2"></span> -->
+                </article>
+                <article>
+                    <div class="badge">
+                        사은품<br>증정
+                    </div>
+                    <div class="image">
+                        <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/benefit02-1.png" alt="헤라 구매사은품: $55 이상 구매 시 블랙쿠션 파운데이션 퍼프3개 or 스킨 글로우 쿠션 파운데이션 퍼프 3개 랜덤증정">
+                    </div>
+                    <div class="texts">
+                        <h3>
+                            $55 이상 구매 시<br>
+                            <strong>블랙쿠션 파운데이션 퍼프3개<br>or 스킨 글로우 쿠션 파운데이션 퍼프 3개 랜덤증정</strong>
+                        </h3>
+                    </div>
+                    <!-- <span class="fa_soldout_02 ev_btn stamp sold-out-2"></span> -->
+                </article>
+                <article>
+                    <div class="badge">
+                        사은품<br>증정
+                    </div>
+                    <div class="image">
+                        <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/benefit03.png" alt="헤라 구매사은품: $100 이상 구매 시 헤라 uv프로텍터 파우치 or 시그니아 화이트 까멜리아 파우치 랜덤증정">
+                    </div>
+                    <div class="texts">
+                        <h3>
+                            $100 이상 구매 시<br>
+                            <strong>헤라 uv프로텍터 파우치<br>or 시그니아 화이트 까멜리아 파우치 랜덤증정</strong>
+                        </h3>
+                    </div>
+                    <!-- <span class="fa_soldout_02 ev_btn stamp sold-out-2"></span> -->
+                </article>
+            </section> 
+        </div>
+    </div>
+    <!-- 포커스 영역 -->
+    <div class="content__wrap focus__wrap">
+        <div class="content">
+            <header>
+                <h4>FOCUS ON</h4>
+                <h2>헤라</h2>
+            </header>
+            <section>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/focus01.png" alt="헤라">
+                            </div>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/focus02.png" alt="헤라">
+                            </div>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/focus03.png" alt="헤라">
+                            </div>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/focus04.png" alt="헤라">
+                            </div>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/focus05.png" alt="헤라">
+                            </div>
+                        </article>
+                        <article class="swiper-slide">
+                            <div class="image">
+                                <img src="https://image.hddfs.com/front-pub/event/2025/12/12_weeksale_hera/focus06.png" alt="헤라">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="pagination-fraction"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
+        </div>
+    </div>
+</div>
+<script>
+    // 베스트영역 스와이퍼
+    var bestSwiper = new Swiper('.best__wrap .swiper', {
+        slidesPerView: 4,
+        spaceBetween: 16,
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: '.best__wrap .pagination-fraction',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.best__wrap .swiper-button-next',
+            prevEl: '.best__wrap .swiper-button-prev',
+        },
+    });
+
+    // 포커스영역 스와이퍼
+    var focusSwiper = new Swiper('.focus__wrap .swiper', {
+        slidesPerView: 3,
+        spaceBetween: 23,
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: '.focus__wrap .pagination-fraction',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.focus__wrap .swiper-button-next',
+            prevEl: '.focus__wrap .swiper-button-prev',
+        },
+    });
+</script>
+<!-- E : BO 등록 영역 -->
+                </div>
+                <div class="attention_area">
+                    <p class="attention_tit">유의사항</p>
+                    <ul class="attention_list">
+                        <li>내용</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- E : container -->
+    <!-- S : footer -->
+    <script src="../hyundai/include/footer.js"></script>
+    <!-- E : footer -->
+</div>
+</body>
+</html>

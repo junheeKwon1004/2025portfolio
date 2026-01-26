@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>현대면세점</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="https://cdn.hddfs.com/front/js/M_KO/jquery-1.12.4.min.js?ver=395"></script>
+    <script src="https://cdn.hddfs.com/front/js/M_KO/jquery-ui.js?ver=395"></script>
+    <!-- <script src="../../../hddf-frontoffice-mo/src/main/webapp/js/M_KO/jquery.bxslider.js"></script> -->
+    <script src="https://cdn.hddfs.com/front/js/M_KO/swiper.min.js?ver=395"></script>
+    <script src="https://cdn.hddfs.com/front/js/M_KO/common.ui.js?ver=395"></script>
+    <link rel="shortcut icon" href="https://cdn.hddfs.com/front/images/KO/common/favicon_H.ico">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/jquery-ui.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/swiper.min.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/common.css?ver=395">
+    <link rel="stylesheet" href="https://cdn.hddfs.com/front/css/M_KO/layout.css?ver=395">
+</head>
+<body>
+    <!-- S : header -->
+    <script src="../hyundai/include/mo_header.js"></script>
+    <!-- E : header -->
+    <!-- S : container -->
+    <div class="container new_type">
+        <div class="gnbev_view">
+            <div class="contents_area no_space">
+                <div class="btn_share_wrap">
+                    <div class="btn_share_area">
+                        <a href="javascript:void(0);" class="btn_ev_share sharePopup"></a>
+                        <a href="javascript:mergeMyEvnt('0003167');" class="btn_ev_like"></a>
+                    </div>
+                </div>
+                <div class="ev_editarea">
+                    <!-- S : 소스복사 -->
+                    <style>
+                        .copyBtn { width: 140px; height: 40px; align-content: center; font-size: 14px; font-weight: 600; border-radius: 100px; box-shadow: 0 4px 12px rgba(240, 60, 25, 0.4); background: linear-gradient(135deg, #f03c19, #ff7253); color: #fff; position: fixed; top: 10px; right: 0; z-index: 999; }
+                    </style>
+                    <script>
+                    function copySection(id = "targetSection") {
+                        const el = document.getElementById(id);
+                        if (!el) return alert("복사할 영역을 찾지 못했습니다.");
+                        const data = el.innerHTML;
+                        if (navigator.clipboard?.writeText) {
+                            navigator.clipboard.writeText(data)
+                                .then(() => alert("소스 복사 완료!\nCtrl+V로 붙여넣기 하세요."))
+                                .catch(() => fallbackCopy(data));
+                        } else {
+                            fallbackCopy(data);
+                        }
+                    }
+                    function fallbackCopy(text) {
+                        const ta = document.createElement("textarea");
+                        ta.value = text; ta.style.position = "fixed"; ta.style.top = "-9999px";
+                        document.body.appendChild(ta); ta.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(ta);
+                        alert("소스 복사 완료!\nCtrl+V로 붙여넣기 하세요.");
+                    }
+                    </script>
+                    <button class="copyBtn" onclick="copySection()">소스 복사하기</button>
+                    <!-- E : 소스복사 --> 
+<!-- S : BO 등록 영역 -->
+<script src="../../common/js/common.js" type="module"></script>
+<div id="targetSection">
+<style type="text/css">
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+.font_rbt {font-family:"Roboto"; font-weight:400; font-style: normal;}
+
+/* reset */
+.location, .event_top_share, .event_detail_btn {display:none;}
+.contents_area {border-bottom:none;}
+#content {width:100%;}
+[data-tab] {display:block;}
+.btn_box.type2.btn_area {display:none;}
+
+/* layout :  키 비주얼 영역 */
+.key-visual__wrap{width: 100%;position: relative;}
+.key-visual__texts{width: 100%;position: absolute;top: 60px;left: 50%;transform: translateX(-50%);text-align: center;}
+.ev_editarea .key-visual__texts img{margin-bottom: 28px;width: 160px!important;}
+.key-visual__texts h2{color: #000;	font-size: 32px;font-weight: 700;letter-spacing: -1.6px;line-height: 45px;}
+.key-visual__texts h4{color: #000;	font-size: 32px;font-weight: 500;letter-spacing: -1.6px;}
+.key-visual .marquee{
+    overflow: hidden;
+    white-space: nowrap;
+    background: #E84E0E;
+    height: 13.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.key-visual .marquee__track{
+    display: inline-flex;
+    width: max-content;             
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+}
+.key-visual .marquee__item{
+    display: inline-block;
+    padding-right: 3.33vw;    
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans CJK KR";
+    font-size: 3.73vw;
+    font-weight: 700;
+    letter-spacing: -0.19vw;      
+}
+@keyframes marquee{
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); } 
+}
+
+/* layout : 컨텐츠 영역 */
+.content__wrap {width:100%; padding: 13.33vw 7.20vw 17.33vw 7.20vw;}
+.content__wrap header{text-align: center;}
+.content__wrap header span {font-size:3.84vw; font-weight:500; line-height:4.38vw; letter-spacing:normal; color:#fff; border-radius: 4.00vw;
+background: #1D68C1; padding: 1.87vw 3.33vw;}
+.content__wrap header h2 {
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 8.00vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 10.67vw; /* 133.333% */
+    letter-spacing: -0.24vw;
+}
+.content__wrap header h4{
+	color: #000;
+	font-family: Pretendard;
+	font-size: 4.00vw;
+	font-weight: 500;
+	line-height: 4.5vw; /* 100% */
+	letter-spacing: 0.1vw;
+	text-transform: uppercase;
+}
+.content__wrap header .icon{
+    margin-bottom: 2.67vw;
+}
+.content__wrap header .icon img{
+    width: 9.60vw !important;
+    height: 10.93vw !important;
+}
+
+/* layout : EVENT01 */
+.content__wrap.content__wrap--01{
+    background: url('https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 455.20vw;
+    background-position: center center;
+    width: 100%;
+    height: 455.20vw;
+}
+.content__wrap.content__wrap--01 section{
+    padding-top: 41.33vw;
+    position: relative;
+}
+.content__wrap--01 section .alreadyWinDimmed{
+    display:none; 
+    position:absolute; 
+    top: 60%;
+    left: 51%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translate(-51%, -50%);
+}
+.content__wrap--01 .gray{
+    color: #1D1D1D;
+    text-align: center;
+    font-family: "Noto Sans CJK KR";
+    font-size: 4.00vw;
+    font-weight: 400;
+    line-height: 6.67vw; /* 166.667% */
+    letter-spacing: -0.04vw;
+    margin: 4.80vw 0 8vw 0;
+}
+.content__wrap--01 .btn_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3.20vw;
+}
+.content__wrap--01 .fa_evt_btn01{
+    width: 75.73vw;
+    height: 16.00vw;
+    border-radius: 1.07vw;
+    background: #E84E0E;
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 4.00vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.80vw; /* 120% */
+    letter-spacing: -0.08vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content__wrap--01 .fa_evt_btn01 img,
+.content__wrap--01 .fa_evt_btn02 img{
+    width: 4.80vw !important;
+    height: 4.80vw !important;
+}
+.content__wrap--01 .fa_evt_btn02{
+    width: 75.73vw;
+    height: 16.00vw;
+    border-radius: 1.07vw;
+    background: #fff;
+    border: 1px solid rgba(27, 30, 35, 1);
+    color: #1B1E23;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 4.00vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.80vw; /* 120% */
+    letter-spacing: -0.08vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content__wrap--01 .info_content{
+    margin-top: 13.33vw;
+}
+
+/* 룰렛 회전 */
+.roulette_img {
+    display: inline-block;
+    transform-origin: 50% 50%;
+}
+.roulette_img.is-rotating {
+    animation: roulette-rotate 2.2s linear infinite;
+}
+@keyframes roulette-rotate {
+    to { transform: rotate(360deg); }
+}
+
+/* 모달 */
+.evt-dim {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 9000; 
+}
+.evt-dim.is-on { display:block; }
+.popup-box{
+    display:none;                
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9100;              
+}
+.popup-box .img{
+    position: relative;
+}
+.popup-box .img .popup__close,
+.popup-box.first-box .img .popup__close{
+    position: absolute;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    cursor: pointer;
+    width: 5.33vw !important;
+    height: 5.33vw !important;
+}
+.popup-box .img img{
+    width: 78.67vw !important;
+    height: 139.73vw !important;
+}
+.popup-box.first-box .img img{
+    width: 76.67vw !important;
+    height: auto !important;
+}
+.popup-box .img .cont a{
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 91.20vw;
+    height: 17.60vw;
+    opacity: 0;
+}
+
+/* layout : banner */
+.content__wrap.content__wrap--02{
+    padding: 0;
+}
+</style>
+<!-- layout :  키 비주얼 영역 -->
+<div class="key-visual__wrap">
+	<div class="key-visual">
+		<img class="key-visual__image" alt="제주항공 국제선 왕복 항공권 추첨 이벤트" src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_kv.jpg" />
+        <div class="marquee">
+            <div class="marquee__track">
+                <span class="marquee__item">Jeju Air International Round-trip Ticket Giveaway Event</span>
+                <span class="marquee__item">Win Jeju Air Flight Tickets!</span>
+                <span class="marquee__item">Win Jeju Air Flight Tickets!</span>
+                <span class="marquee__item">Win Jeju Air Flight Tickets!</span>
+                <span class="marquee__item">Win Jeju Air Flight Tickets!</span>
+            </div>
+        </div>
+	</div>
+</div>
+
+<!-- layout : 컨텐츠 영역 - 항공권 응모 -->
+<div class="content__wrap content__wrap--01">
+    <section>
+        <!-- 이미 당첨된 사람은 페이지 접근 시 룰렛 딤드처리 -->
+        <div class="alreadyWinDimmed">
+            <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_roulette_dimd.png" alt="이미 당첨되신 고객님은 재참여에 제한됩니다.">
+        </div>
+
+        <!-- 룰렛 -->
+        <div class="roulette_img is-rotating" id="roulette">
+            <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_roulette.png" alt="룰렛 이미지">
+        </div>
+        <p class="gray">※ 1일 1회 응모 가능, 중복 당첨 시 최초 1회만 인정</p>
+        <div class="btn_wrap">
+            <button type="button" class="result-btn fa_evt_btn01" onclick="javascript:addEvnt2('0007216');">
+                <span class="txt_blind">뽑기 게임 참여하기</span>
+                <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_icon_arrow_w.png" alt="arrow">
+            </button>
+            <button type="button" class="chk-btn fa_evt_btn02" onclick="javascript:_checkMyStats();">
+                <span class="txt_blind">내가 받은 혜택 확인하기</span>
+                <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_icon_arrow_b.png" alt="arrow">
+            </button>
+        </div>
+        <div class="info_content">
+            <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_info.png" alt="경품 설명 이미지">
+        </div>
+    </section>
+</div>
+
+<!-- layout : 배너  영역 - 혜택 확인하기 -->
+<div class="content__wrap content__wrap--02">
+    <a href=""><img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_banner.png" alt="제주항공 연중최대할인 찜특가 배너 이미지"></a>
+</div>
+
+<!-- layout : 팝업 영역 - 모달 팝업 -->
+
+    <!-- 키링 -->
+    <div class="popup-box" id="prize01">
+        <div class="img">
+            <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/close.png" alt="닫기 버튼" class="popup__close">
+            <div class="cont">
+                <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_popup_keyring.png" alt="키링 팝업">
+                <a href="https://form.naver.com/response/zBAWMlD8jP8KDm8MjhY-nw">배송 주소 바로 입력하기</a>
+            </div>
+        </div>
+    </div>
+
+    <!--샤워 필터-->
+    <div class="popup-box" id="prize02">
+        <div class="img">
+            <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/close.png" alt="닫기 버튼" class="popup__close">
+            <div class="cont">
+                <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_popup_showerfilter.png" alt="샤워 필터 팝업">
+                <a href="https://form.naver.com/response/2TgnQ0xCKbX8FqvTQR31eA">배송 주소 바로 입력하기</a>
+            </div>
+        </div>
+    </div>
+
+    <!--케이블-->
+    <div class="popup-box" id="prize03">
+        <div class="img">
+            <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/close.png" alt="닫기 버튼" class="popup__close">
+            <div class="cont">
+                <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_popup_cable.png" alt="케이블 팝업">
+                <a href="https://form.naver.com/response/ZCvREA5Lo3g_rnpZ3m7zZQ">배송 주소 바로 입력하기</a>
+            </div>
+        </div>
+    </div>
+
+    <!--미당첨-->
+    <div class="popup-box first-box" id="prize04">
+        <div class="img">
+            <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/close.png" alt="닫기 버튼" class="popup__close">
+            <div class="cont">
+                <img src="https://image.hddfs.com/front-pub/event/2026/01/19_jeju_air_roulette/mo_popup_faile.png" alt="미당첨 팝업">
+            </div>
+        </div>
+    </div>
+    <div class="evt-dim" id="evtDim"></div>
+
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.hddfs.com/front/css/M_KO/aos.css"><!-- aos -->
+<script type="text/javascript" src="https://cdn.hddfs.com/front/js/M_KO/aos.js"></script><!-- aos -->
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+    const bannerWrap = document.querySelector(".content__wrap--02");
+    if (!bannerWrap) return;
+
+    // 한국 시간 기준 날짜 설정
+    // month는 0부터 시작 (1 = 2월)
+    const startDate = new Date(2026, 1, 3, 0, 0, 0);   // 2026-02-03 00:00:00
+    const endDate   = new Date(2026, 1, 10, 23, 59, 59); // 2026-02-10 23:59:59
+    const now = new Date();
+
+    if (now >= startDate && now <= endDate) {
+        bannerWrap.style.display = "block";
+    } else {
+        bannerWrap.style.display = "none";
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const roulette = document.getElementById('roulette');
+    const dim = document.getElementById('evtDim');
+
+    // 룰렛 정지 + 딤드 ON
+    function stopAndDimOn(){
+        if (roulette) roulette.classList.remove('is-rotating');
+        if (dim) dim.classList.add('is-on');
+    }
+
+    // 딤드 OFF
+    function dimOff(){
+        if (dim) dim.classList.remove('is-on');
+    }
+
+    // 캡처링에서 stopAndDimOn() 제거 
+    document.addEventListener('click', function(e){
+        const btn = e.target.closest('.result-btn');
+        if(!btn) return;
+        // stopAndDimOn(); // 삭제
+    }, true);
+
+    // 팝업 닫기 처리 
+    $(document).on('click', '.popup__close', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        $(this).closest('.popup-box').stop().fadeOut();
+        $('#evtDim').removeClass('is-on'); // 유지
+    });
+
+    // addEvnt2에서 stopAndDimOn/dimOff를 써야 하니까 window로 빼서 접근 가능하게
+    window.stopAndDimOn = stopAndDimOn;
+    window.dimOff = dimOff;
+});
+
+
+//이벤트 관련 변수
+    let _randomIDX = "0007216";  
+    let esimCode = "";
+
+    let _joinYN = "N";      //25.09.11 - 경품행사 한번이라도 참여했는지 (미당첨 포함)
+    let _reJoinYN = "Y";    //25.09.11 - 경품행사 재참여가능여부 (참여자 중 미당첨만된 경우에는 재참여가능)
+    var _joinPrize01YN = "N"; // 키링
+    var _joinPrize02YN = "N"; // 샤워필터
+    var _joinPrize03YN = "N"; // 케이블
+    var _joinPrize04YN = "N"; // 미당첨
+
+    /* S : 페이지 로드 시 실행되는 영역 */
+    document.addEventListener('DOMContentLoaded', function () {
+        _evtInit()
+    });
+    /* E : 페이지 로드 시 실행되는 영역 */
+
+
+   /* S : 초기 셋팅 및 확인 */
+    function _evtInit() {
+        if (isLogin) {
+            $.ajax({
+                async: true,
+                url: ctx_curr + '/mm/myEvntSpex/listTotEvntPtcpBnf.json',
+                dataType: 'json',
+                type: 'POST',
+                success: function (data, textStatus, jqXHR) {
+                    if (!crew.ajaxValidate(data)) return;
+                    
+                    data.ptcpBnfList.forEach(function (ptcpBnf) {
+                        if (ptcpBnf.evntId == _randomIDX) {
+                            _joinYN = "Y"; 
+                            
+                            if (ptcpBnf.evntPtcpBnf.indexOf(_set_prize01) > -1) { 
+                                _joinPrize01YN = "Y";
+                                _reJoinYN = "N"; 
+                            } 
+                            else if (ptcpBnf.evntPtcpBnf.indexOf(_set_prize02) > -1) {
+                                _joinPrize02YN = "Y";
+                                _reJoinYN = "N"; 
+                            } 
+                            else if (ptcpBnf.evntPtcpBnf.indexOf(_set_prize03) > -1) {
+                                _joinPrize03YN = "Y";
+                                _reJoinYN = "N"; 
+                            } 
+                            else if (ptcpBnf.evntPtcpBnf.indexOf(_set_prize04) > -1) { // 미당첨
+                                _joinPrize04YN = "Y";
+                                
+                            }
+                        }
+                    });
+
+                    // 당첨자 딤드 처리
+                    if (_reJoinYN == "N") {
+                        $(".alreadyWinDimmed").stop().fadeIn(); 
+                        $(".result-btn").addClass("disabled").css("pointer-events", "none");
+                    }
+                }
+            });
+        }
+    }
+    /* E : 초기 셋팅 및 확인 */
+
+    //// 2025.09.08 IT 경품명 세팅(BO와 동일해야함)
+    let _set_prize01 = "가스파드와 리사 키링";
+    let _set_prize02 = "샤워필터";
+    let _set_prize03 = "올인원 케이블";
+    let _set_prize04 = "미당첨";
+    //let _set_prize05 = "eSIM"; // 25.09.11 IT 수정 - eSim은 경품명이 eSim이 아니라 난수번호라서 삭제 = esim번호는 수가 많아서 default 값으로 처리
+
+    function addEvnt2(evntId) {
+        // 로그인체크
+        if (!isLogin) { alert("로그인 후 이용해주세요."); login(); return; }
+
+        // 오늘 참여 이력이 있고, 아직 당첨되지 않은 경우 (미당첨자 재참여 방지 알럿)
+        if (_joinYN == "Y" && _reJoinYN == "Y") {
+            alert("1일 1회 참여 가능합니다.");
+            return;
+        }
+
+        // 기본값 설정
+        var bnfSeq = typeof (bnfSeq) == "undefined" ? 0 : bnfSeq;
+
+        // 전송
+        $.ajax({
+            async: false,
+            url: ctx_curr + "/op/evnt/evntJoinValidation.json",
+            dataType: "json",
+            type: "POST",
+            data: { evntId: evntId, bnfSeq: bnfSeq },
+            success: function (data, textStatus, jqXHR) {
+                if (!crew.ajaxValidate(data)) { return; }
+                $.ajax({
+                    async: false,
+                    url: ctx_curr + "/op/evnt/evntJoin.json",
+                    dataType: "json",
+                    type: "POST",
+                    data: { evntId: evntId, bnfSeq: bnfSeq },
+                    success: function (data, textStatus, jqXHR) {
+
+                        if (!crew.ajaxValidate(data)) { return; }
+
+                        // 이벤트 참여 결과 내용 구성
+                        var winInfo = [];
+                        var winType = "";
+                        var svmtAmt = "";
+                        var cupNm = "";
+                        var cupDcAmt = "";
+                        var cupDcRate = "";
+                        var curCd = "";
+                        var famtYn = "";
+                        var evntGvawNm = "";    // 2025.09.08 IT - 당첨된 경품명
+
+                        // 상세항목 구성
+                        var bnfListWinResult = data.info.bnfListWinResult;
+                        for (var i = 0; bnf = bnfListWinResult[i]; i++) {
+                            if (bnf.svmtId != null) {
+                                winInfo.push("적립금 " + comma(bnf.rsvgAmt) + "원");
+                                winType = "svmt";
+                                svmtAmt = comma(bnf.rsvgAmt);
+                            }
+
+                            if (bnf.cupId != null) {
+                                winInfo.push("쿠폰 " + bnf.cupNm);
+                                winType = "cup";
+                                cupNm = bnf.cupNm;
+                                cupDcAmt = comma(bnf.cupDcAmt);
+                                cupDcRate = bnf.cupDcRate;
+                                curCd = bnf.curCd;
+                                famtYn = bnf.famtYn;
+                            }
+
+                            if (bnf.evntGvawCommNm != null) {
+                                evntGvawNm = bnf.evntGvawCommNm;    //// 2025.09.08 IT 당첨된 경품명 evntGvawNm변수에 저장
+                                winInfo.push(evntGvawNm);
+                                winType = "gvaw";
+
+                                _joinYN = "Y";
+                            }
+                        }
+
+                        if (winInfo.length != 0) {
+                            $("#event_result_msg").html("축하합니다!<br>" + winInfo.join(",") + "에 당첨되었습니다.");
+
+                        } else {
+                            $("#event_result_msg").html("꽝!<br>아쉽지만 다음 기회를 노려주세요.");
+                        }
+
+                        var msgBox = [];
+                        if (winType == "svmt") {  //적립금
+                            msgBox.push('<div class="save_coupon_box sm ">');
+                            msgBox.push('    <p class="tit">적립금</p>');
+                            msgBox.push('    <p class="resize win"><span>￦</span>' + svmtAmt + '</p>');
+                            msgBox.push('</div>');
+                            $("#evnt_info_msg").html("다운로드 받은 혜택은 마이현대에서 확인하세요.");
+
+                        } else if (winType == "cup") { //쿠폰
+                            msgBox.push('<div class="save_coupon_box cp">');
+                            msgBox.push('    <p class="tit">' + cupNm + '</p>');
+                            if (famtYn == "Y") {
+                                if (curCd == "USD") {
+                                    msgBox.push('    <p class="sale">$<span>' + cupDcAmt + '</span></p>');
+                                } else {
+                                    msgBox.push('    <p class="sale"><span>' + cupDcAmt + '</span>원</p>');
+                                }
+                            } else if (famtYn == "N") {
+                                msgBox.push('    <p class="sale"><span>' + cupDcRate + '</span>%</p>');
+                            }
+                            msgBox.push('</div>');
+                            $("#evnt_info_msg").html("다운로드 받은 혜택은 마이현대에서 확인하세요.");
+
+                        } else if (winType == "gvaw") { //상품
+                            // 2025.09.08 IT 당첨된 경품명을 비교하여 경품별 팝업띄우기
+                            switch (evntGvawNm) {
+                                case _set_prize01:
+                                    $("#prize01").stop().fadeIn();
+                                    _joinPrize01YN = "Y";
+                                    break;
+                                case _set_prize02:
+                                    $("#prize02").stop().fadeIn();
+                                    _joinPrize02YN = "Y";
+                                    break;
+                                case _set_prize03:
+                                    $("#prize03").stop().fadeIn();
+                                    _joinPrize03YN = "Y";
+                                    break;
+                                case _set_prize04:
+                                    $("#prize04").stop().fadeIn();
+                                    _joinPrize04YN = "Y";
+                                    break;
+
+                                default:
+                                    $("#prize05").stop().fadeIn();
+
+                                    esimCode = evntGvawNm;
+                                    if (esimCode !== "") {
+                                        $("#esimCouponPop .pop_text__box").text(esimCode);
+
+                                        console.log("당첨된 eSIM 쿠폰 번호:", esimCode);
+                                    } else {
+                                        alert("쿠폰 번호가 조회되지 않았습니다.");
+                                    }
+                                    _joinPrize05YN = "Y";
+
+                                    break;
+                            }
+
+                        } else {  //꽝
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        //console.log(jqXHR.status);
+                    }
+                });
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                //console.log(jqXHR.status);
+            }
+        });
+    }
+
+    $(".check_coupon").on("click", function () {
+        $("#esimCouponPop").stop().fadeIn();
+        $("#prize05").stop().fadeOut();
+    })
+
+    /* S : 내가 받은 혜택 확인하기 */
+    function _checkMyStats() {
+        console.log("당첨 체크 버튼");
+        if (!isLogin) { alert("로그인 후 이용해주세요."); login(); return; }
+        
+        if (_joinYN == "N") {
+            alert("이벤트 참여 내역이 없습니다.");
+        }
+        else if (_joinYN == "Y") {
+            const prizeMap = {
+                _joinPrize01YN: "#prize01",
+                _joinPrize02YN: "#prize02",
+                _joinPrize03YN: "#prize03",
+                _joinPrize04YN: "#prize04"
+            };
+
+            for (let key in prizeMap) {
+                if (window[key] === "Y") {
+                    // [수정] 팝업 띄울 때 배경 딤드(is-on)도 같이 추가
+                    $('#evtDim').addClass('is-on');
+                    $(prizeMap[key]).stop().fadeIn();
+                    break;
+                }
+            }
+        }
+    }
+    /* E : 내가 받은 혜택 확인하기 */
+</script>
+</div>
+<!-- E : BO 등록 영역 -->
+                </div><!--//ev_editarea-->
+                <div class="attention_area pdb_no">
+                    <p class="attention_tit">유의사항</p>
+                    <ul class="dot_list_new">
+                        <li>내용</li>
+                    </ul>
+                </div>
+            </div><!--//contents_area-->
+        </div><!--//gnbev_view-->
+    </div>
+    <!-- E : container -->
+    <!-- S : footer -->
+    <script src="../hyundai/include/mo_footer.js"></script>
+    <!-- E : footer -->
+    <div class="gnb_dimmed"></div>
+</body>
+</html>

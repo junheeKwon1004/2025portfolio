@@ -13,6 +13,12 @@ import koreaArchImg from "../assets/images/korea-arch.png";
 import koreaHealthImg from "../assets/images/korea-health.png";
 import myongjiImg from "../assets/images/myongji.png";
 import monoImg from "../assets/images/mono.png";
+import hyundaiImg01 from "../assets/images/hyndai_ui.png";
+import hyundaiImg02 from "../assets/images/hyundai_ezwel.png";
+import hyundaiImg03 from "../assets/images/hyundai_ezwel.png";
+import hyundaiImg04 from "../assets/images/hyundai_jejuair.png";
+import hyundaiImg05 from "../assets/images/hyundai_jejuair.png";
+import hyundaiImg06 from "../assets/images/hyundai_jejuair.png";
 
 interface ProjectItem {
   title: string;
@@ -25,6 +31,60 @@ interface ProjectItem {
 }
 
 const nineCardData: ProjectItem[] = [
+  {
+    title: "현대면세점 UI 개선",
+    description: "현대면세점 국·중·영 이어가입 UI를 개선해 다국어 가입 과정의 가독성과 사용자 편의성을 강화한 작업",
+    detailUrl: "https://m.hddfs.com/shop/mm/mbshJoin/oflnToOnlnJoin.do",
+    githubUrl: "", // 필요하면 velog 링크
+    imageSrc: hyundaiImg01,
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
+    contribution: "기여도 100%",
+  },
+  {
+    title: "현대면세점 이지웰 이벤트",
+    description: "뽑기 이벤트 API 호출과 이심번호 지급을 위한 난수 API 활용을 비롯해, 등급업·허니 받기·임직원 등급 지급 API 연동을 구현",
+    detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ezwel.html",
+    githubUrl: "", // 필요하면 velog 링크
+    imageSrc: hyundaiImg02,
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
+    contribution: "기여도 100%",
+  },
+  {
+    title: "현대면세점 주특기 이벤트",
+    description: "BEM 클래스 네이밍 규칙과 공통 템플릿 스니펫을 활용해 일관된 구조의 공통 폼 컴포넌트를 제작하고, 작업 효율 및 유지보수성을 개선",
+    detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ko_weeksale_hera.html",
+    githubUrl: "", // 필요하면 velog 링크
+    imageSrc: hyundaiImg03,
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
+    contribution: "기여도 100%",
+  },
+  {
+    title: "현대면세점 제주항공 룰렛이벤트",
+    description: "룰렛 동작 시 API 호출로 경품 당첨 여부를 처리하고 결과 팝업을 노출하는 이벤트 작업",
+    detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ko_jeju_air_roulette.html",
+    githubUrl: "", // 필요하면 velog 링크
+    imageSrc: hyundaiImg04,
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
+    contribution: "기여도 100%",
+  },
+  {
+    title: "현대면세점 놀유니버스 템플릿 작업",
+    description: "BEM 태그 규칙을 활용해 마크업을 정리하고, 스토리북 가이드에 따라 컴포넌트 템플릿화 작업 진행",
+    detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ko_nol.html",
+    githubUrl: "", // 필요하면 velog 링크
+    imageSrc: hyundaiImg05,
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
+    contribution: "기여도 100%",
+  },
+  {
+    title: "현대면세점 MD 추천 기획전 템플릿 작업",
+    description: "BO 연계를 고려해 MD 추천 기획전 UI를 재사용 가능한 컴포넌트 구조로 설계하고 템플릿화한 작업",
+    detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/md_recommendation.html",
+    githubUrl: "", // 필요하면 velog 링크
+    imageSrc: hyundaiImg06,
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
+    contribution: "기여도 100%",
+  },
   {
     title: "Naver",
     description:
@@ -177,11 +237,11 @@ const renderList = (dataSource: ProjectItem[]) => (
   </div>
 );
 
-const apiIndices = [1];
-const reactIndices = [1];
-const projectIndices = [2, 3, 4, 5];
-const jsIndices = [0, 2, 3, 4, 5];
-const responsiveIndices = [2, 3, 4, 5];
+const apiIndices = [1, 3, 7];
+const reactIndices = [7];
+const projectIndices = [0,1,2,3,4,5,6,7,8,9,10,11];
+const jsIndices = [0, 1, 3, 6, 8, 9, 10, 11];
+const responsiveIndices = [8, 9, 10, 11];
 
 const items: TabsProps["items"] = [
   { key: "all", label: "All", children: <>{renderList(nineCardData)}</> },
