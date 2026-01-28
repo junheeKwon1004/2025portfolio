@@ -63,8 +63,8 @@ const Section1: React.FC = () => {
           <p>Jquery</p>
         </div>
         <div className="box">
-          <img src={skillIcon07} alt="Photoshop / Illustration" />
-          <p>PhotoShop / Illustration</p>
+          <img src={skillIcon07} alt="Photoshop / Figma" />
+          <p>PhotoShop / Figma</p>
         </div>
       </div>
     </section>
