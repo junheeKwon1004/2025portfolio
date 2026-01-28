@@ -89,7 +89,7 @@ const nineCardData: ProjectItem[] = [
     mobileUrl:"https://junheekwon1004.github.io/2025portfolio/projects/hyundai/mko_md_recommendation.html",
     githubUrl: "", 
     imageSrc: hyundaiImg06,
-    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Swiper"],
     contribution: "기여도 100%(퍼블리싱)",
   },
   {
