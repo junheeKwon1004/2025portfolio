@@ -15,15 +15,16 @@ import myongjiImg from "../assets/images/myongji.png";
 import monoImg from "../assets/images/mono.png";
 import hyundaiImg01 from "../assets/images/hyndai_ui.png";
 import hyundaiImg02 from "../assets/images/hyundai_ezwel.png";
-import hyundaiImg03 from "../assets/images/hyundai_ezwel.png";
+import hyundaiImg03 from "../assets/images/hyundai_weeksale.png";
 import hyundaiImg04 from "../assets/images/hyundai_jejuair.png";
-import hyundaiImg05 from "../assets/images/hyundai_jejuair.png";
-import hyundaiImg06 from "../assets/images/hyundai_jejuair.png";
+import hyundaiImg05 from "../assets/images/hyundai_noltemplate.png";
+import hyundaiImg06 from "../assets/images/hyundai_recommendation.png";
 
 interface ProjectItem {
   title: string;
   description: string;
   detailUrl: string;
+  mobileUrl: string;
   githubUrl: string;
   imageSrc: string;
   tags: string[];
@@ -34,62 +35,69 @@ const nineCardData: ProjectItem[] = [
   {
     title: "현대면세점 UI 개선",
     description: "현대면세점 국·중·영 이어가입 UI를 개선해 다국어 가입 과정의 가독성과 사용자 편의성을 강화한 작업",
-    detailUrl: "https://m.hddfs.com/shop/mm/mbshJoin/oflnToOnlnJoin.do",
-    githubUrl: "", // 필요하면 velog 링크
+    detailUrl: "", // PC
+    mobileUrl: "https://m.hddfs.com/shop/mm/mbshJoin/oflnToOnlnJoin.do", // MO
+    githubUrl: "",
     imageSrc: hyundaiImg01,
-    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
-    contribution: "기여도 100%",
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "UIUX"],
+    contribution: "기여도 100%(퍼블리싱)",
   },
   {
     title: "현대면세점 이지웰 이벤트",
     description: "뽑기 이벤트 API 호출과 이심번호 지급을 위한 난수 API 활용을 비롯해, 등급업·허니 받기·임직원 등급 지급 API 연동을 구현",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ezwel.html",
-    githubUrl: "", // 필요하면 velog 링크
+    mobileUrl:"https://junheekwon1004.github.io/2025portfolio/projects/hyundai/mo_ezwel.html",
+    githubUrl: "", 
     imageSrc: hyundaiImg02,
-    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
-    contribution: "기여도 100%",
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Json"],
+    contribution: "기여도 100%(퍼블리싱)",
   },
   {
     title: "현대면세점 주특기 이벤트",
     description: "BEM 클래스 네이밍 규칙과 공통 템플릿 스니펫을 활용해 일관된 구조의 공통 폼 컴포넌트를 제작하고, 작업 효율 및 유지보수성을 개선",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ko_weeksale_hera.html",
-    githubUrl: "", // 필요하면 velog 링크
+    mobileUrl:"https://junheekwon1004.github.io/2025portfolio/projects/hyundai/mko_weeksale_hera.html",
+    githubUrl: "", 
     imageSrc: hyundaiImg03,
-    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
-    contribution: "기여도 100%",
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Swiper"],
+    contribution: "기여도 100%(퍼블리싱)",
   },
   {
     title: "현대면세점 제주항공 룰렛이벤트",
     description: "룰렛 동작 시 API 호출로 경품 당첨 여부를 처리하고 결과 팝업을 노출하는 이벤트 작업",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ko_jeju_air_roulette.html",
-    githubUrl: "", // 필요하면 velog 링크
+    mobileUrl:"https://junheekwon1004.github.io/2025portfolio/projects/hyundai/mko_jeju_air_roulette.html",
+    githubUrl: "",
     imageSrc: hyundaiImg04,
-    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
-    contribution: "기여도 100%",
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Json"],
+    contribution: "기여도 100%(퍼블리싱)",
   },
   {
     title: "현대면세점 놀유니버스 템플릿 작업",
     description: "BEM 태그 규칙을 활용해 마크업을 정리하고, 스토리북 가이드에 따라 컴포넌트 템플릿화 작업 진행",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ko_nol.html",
-    githubUrl: "", // 필요하면 velog 링크
+    mobileUrl:"https://junheekwon1004.github.io/2025portfolio/projects/hyundai/mko_nol.html",
+    githubUrl: "", 
     imageSrc: hyundaiImg05,
-    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
-    contribution: "기여도 100%",
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "AOS"],
+    contribution: "기여도 100%(퍼블리싱)",
   },
   {
     title: "현대면세점 MD 추천 기획전 템플릿 작업",
     description: "BO 연계를 고려해 MD 추천 기획전 UI를 재사용 가능한 컴포넌트 구조로 설계하고 템플릿화한 작업",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/md_recommendation.html",
-    githubUrl: "", // 필요하면 velog 링크
+    mobileUrl:"https://junheekwon1004.github.io/2025portfolio/projects/hyundai/mko_md_recommendation.html",
+    githubUrl: "", 
     imageSrc: hyundaiImg06,
     tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Event"],
-    contribution: "기여도 100%",
+    contribution: "기여도 100%(퍼블리싱)",
   },
   {
     title: "Naver",
     description:
       "네이버 클론 코딩을 통한 시맨틱 마크업의 중요성과 접근성을 위한 IR 기법과 효율적인 이미지 로딩을 위한 IS 기법",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/naver/",
+    mobileUrl:"",
     githubUrl: "https://velog.io/@htt1247/%EB%84%A4%EC%9D%B4%EB%B2%84-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9",
     imageSrc: naverImg,
     tags: ["시맨틱 마크업", "CSS", "IR & IS & Blind"],
@@ -108,6 +116,7 @@ const nineCardData: ProjectItem[] = [
     title: "Weather app",
     description: "리액트와 JSX 문법을 활용했고 Open Weather API를 이용하여 실시간 날씨 정보를 조회할 수 있음",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/weather_app/",
+    mobileUrl:"",
     githubUrl: "https://junheekwon1004.github.io/2025portfolio/projects/weather_app/",
     imageSrc: weatherImg,
     tags: ["React", "SCSS", "API 연동", "JSX", "Open Weather API"],
@@ -136,6 +145,7 @@ const nineCardData: ProjectItem[] = [
     title: "고려대학교 건축학과",
     description: "네브루탈리즘처럼 선을 강조한 디자인을 중점으로 작업했고 정형화된 디자인보단 간결한 여백의 미를 추구함",
     detailUrl: "https://archi.korea.ac.kr/main/main.html",
+    mobileUrl:"",
     githubUrl: "",
     imageSrc: koreaArchImg,
     tags: ["HTML5", "CSS3", "Responsive", "JS", "Jquery", "SEO"],
@@ -145,6 +155,7 @@ const nineCardData: ProjectItem[] = [
     title: "고려대학교 보건과학대학 및 학부 4",
     description: "대학 사이트와 학부 사이트의 통일성을 추구하며 작업했고 css의 모션 효과와 호버 효과를 준 사이트",
     detailUrl: "https://chs.korea.ac.kr/main/main.html",
+    mobileUrl:"",
     githubUrl: "",
     imageSrc: koreaHealthImg,
     tags: ["HTML5", "CSS3", "Responsive", "JS", "Jquery", "SEO"],
@@ -154,6 +165,7 @@ const nineCardData: ProjectItem[] = [
     title: "명지전문대학교 조기취업형계약학과",
     description: "다양한 컬러와 일러스트를 활용했고 아이콘을 넣어 실용적이고 직관적인 사용자 인터페이스를 구축",
     detailUrl: "https://early.mjc.ac.kr/main/main.html",
+    mobileUrl:"",
     githubUrl: "",
     imageSrc: myongjiImg,
     tags: ["HTML5", "CSS3", "Responsive", "JS", "Jquery", "SEO"],
@@ -163,6 +175,7 @@ const nineCardData: ProjectItem[] = [
     title: "모노커뮤니케이션즈",
     description: "기업 아이덴티티를 살려 브랜드 컬러, 아이콘 등을 활용했고 콘텐츠 중심의 레이아웃을 활용함",
     detailUrl: "https://www.mono.co.kr/main/main.html",
+    mobileUrl:"",
     githubUrl: "",
     imageSrc: monoImg,
     tags: ["HTML5", "CSS3", "Responsive", "JS", "Jquery", "SEO"],
@@ -211,25 +224,52 @@ const renderList = (dataSource: ProjectItem[]) => (
           <div className="contribution">{item.contribution}</div>
         </div>
         <div className="button-group">
-          {item.detailUrl && (
-            <Button
-              type="primary"
-              href={item.detailUrl}
-              target="_blank"
-              className="mainBtn leftButton"
-            >
-              Site
-            </Button>
-          )}
-          {item.githubUrl && (
-            <Button
-              type="default"
-              href={item.githubUrl}
-              target="_blank"
-              className="mainBtn rightButton"
-            >
-              Velog
-            </Button>
+          {item.mobileUrl ? (
+            <>
+              {/* PC */}
+              {item.detailUrl && (
+                <Button
+                  type="primary"
+                  href={item.detailUrl}
+                  target="_blank"
+                  className="mainBtn leftButton"
+                >
+                  PC
+                </Button>
+              )}
+              {/* MO */}
+              <Button
+                type="default"
+                href={item.mobileUrl}
+                target="_blank"
+                className="mainBtn rightButton"
+              >
+                MO
+              </Button>
+            </>
+          ) : (
+            <>
+              {item.detailUrl && (
+                <Button
+                  type="primary"
+                  href={item.detailUrl}
+                  target="_blank"
+                  className="mainBtn leftButton"
+                >
+                  Site
+                </Button>
+              )}
+              {item.githubUrl && (
+                <Button
+                  type="default"
+                  href={item.githubUrl}
+                  target="_blank"
+                  className="mainBtn rightButton"
+                >
+                  Velog
+                </Button>
+              )}
+            </>
           )}
         </div>
       </Card>
