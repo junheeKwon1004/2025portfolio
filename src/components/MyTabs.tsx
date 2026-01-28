@@ -43,6 +43,16 @@ const nineCardData: ProjectItem[] = [
     contribution: "기여도 100%(퍼블리싱)",
   },
   {
+    title: "현대면세점 에스티로더 브랜드관 리뉴얼",
+    description: "면세점 내 브랜드관 풀 리뉴얼 작업로 상품 옵션 선택 UI·위젯 인터랙션 구현",
+    detailUrl: "",
+    mobileUrl:"https://m.hddfs.com/shop/dm/lgBran/esteelauder/lgBranMain.do",
+    githubUrl: "", 
+    imageSrc: hyundaiImg06,
+    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Swiper", "selectmenu"],
+    contribution: "기여도 100%(퍼블리싱)",
+  },
+  {
     title: "현대면세점 이지웰 이벤트",
     description: "뽑기 이벤트 API 호출과 이심번호 지급을 위한 난수 API 활용을 비롯해, 등급업·허니 받기·임직원 등급 지급 API 연동을 구현",
     detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/ezwel.html",
@@ -80,16 +90,6 @@ const nineCardData: ProjectItem[] = [
     githubUrl: "", 
     imageSrc: hyundaiImg05,
     tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "AOS"],
-    contribution: "기여도 100%(퍼블리싱)",
-  },
-  {
-    title: "현대면세점 MD 추천 기획전 템플릿 작업",
-    description: "BO 연계를 고려해 MD 추천 기획전 UI를 재사용 가능한 컴포넌트 구조로 설계하고 템플릿화한 작업",
-    detailUrl: "https://junheekwon1004.github.io/2025portfolio/projects/hyundai/md_recommendation.html",
-    mobileUrl:"https://junheekwon1004.github.io/2025portfolio/projects/hyundai/mko_md_recommendation.html",
-    githubUrl: "", 
-    imageSrc: hyundaiImg06,
-    tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Swiper"],
     contribution: "기여도 100%(퍼블리싱)",
   },
   {
