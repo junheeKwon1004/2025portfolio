@@ -35,8 +35,8 @@ const nineCardData: ProjectItem[] = [
   {
     title: "현대면세점 UI 개선",
     description: "현대면세점 국·중·영 이어가입 UI를 개선해 다국어 가입 과정의 가독성과 사용자 편의성을 강화한 작업",
-    detailUrl: "", // PC
-    mobileUrl: "https://m.hddfs.com/shop/mm/mbshJoin/oflnToOnlnJoin.do", // MO
+    detailUrl: "https://m.hddfs.com/shop/mm/mbshJoin/oflnToOnlnJoin.do", // PC
+    mobileUrl: "", // MO
     githubUrl: "",
     imageSrc: hyundaiImg01,
     tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "UIUX"],
@@ -45,8 +45,8 @@ const nineCardData: ProjectItem[] = [
   {
     title: "현대면세점 에스티로더 브랜드관 리뉴얼",
     description: "면세점 내 브랜드관 풀 리뉴얼 작업로 상품 옵션 선택 UI·위젯 인터랙션 구현",
-    detailUrl: "",
-    mobileUrl:"https://m.hddfs.com/shop/dm/lgBran/esteelauder/lgBranMain.do",
+    detailUrl: "https://m.hddfs.com/shop/dm/lgBran/esteelauder/lgBranMain.do",
+    mobileUrl: "",
     githubUrl: "", 
     imageSrc: hyundaiImg06,
     tags: ["HTML5", "CSS3", "JavaScript", "jQuery", "Swiper", "selectmenu"],
