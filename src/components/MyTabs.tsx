@@ -18,7 +18,7 @@ import hyundaiImg02 from "../assets/images/hyundai_ezwel.png";
 import hyundaiImg03 from "../assets/images/hyundai_weeksale.png";
 import hyundaiImg04 from "../assets/images/hyundai_jejuair.png";
 import hyundaiImg05 from "../assets/images/hyundai_noltemplate.png";
-import hyundaiImg06 from "../assets/images/hyundai_recommendation.png";
+import hyundaiImg06 from "../assets/images/hyundai_esteelauder.png";
 
 interface ProjectItem {
   title: string;
@@ -277,11 +277,11 @@ const renderList = (dataSource: ProjectItem[]) => (
   </div>
 );
 
-const apiIndices = [1, 3, 7];
+const apiIndices = [2, 4, 7];
 const reactIndices = [7];
 const projectIndices = [0,1,2,3,4,5,6,7,8,9,10,11];
 const jsIndices = [0, 1, 3, 6, 8, 9, 10, 11];
-const responsiveIndices = [8, 9, 10, 11];
+const responsiveIndices = [0, 1, 2, 3, 4, 5, 8, 9, 10, 11];
 
 const items: TabsProps["items"] = [
   { key: "all", label: "All", children: <>{renderList(nineCardData)}</> },
